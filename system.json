@@ -2,7 +2,7 @@
   "name": "mutant-year-zerp",
   "title": "Mutant Year Zero",
   "description": "Mutant Year Zero game system for FoundryVTT.",
-  "version": 0.0,
+  "version": 1.0,
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.6.5",
   "templateVersion": 2,
@@ -44,6 +44,6 @@
   "url": "https://github.com/Nogarx/MutantYearZero_FoundryVTT",
   "socket": true,
   "manifest": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/master/system.json",
-  "download": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/v1.0.zip",
+  "download": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/archive/v0.0.zip",
   "license": "LICENSE.txt"
 }
