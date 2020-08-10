@@ -44,6 +44,6 @@
   "url": "https://github.com/Nogarx/MutantYearZero_FoundryVTT",
   "socket": true,
   "manifest": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/master/system.json",
-  "download": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/archive/v0.0.zip",
+  "download": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/archive/master.zip",
   "license": "LICENSE.txt"
 }
