@@ -1,0 +1,25 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class="header">
+        <div class="avatar">
+            <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        </div>
+        <div class="name">
+            <label>{{localize "MONSTER.NAME"}}</label>
+            <input name="name" type="text" value="{{item.name}}"/>
+        </div>
+    </div>
+    <div class="item">
+        <div class="bonus">
+            <label>{{localize "MONSTER.DICE"}}</label>
+            <input name="data.dice" type="text" value="{{data.dice}}"/>
+        </div>
+        <div class="damage">
+            <label>{{localize "MONSTER.DAMAGE"}}</label>
+            <input name="data.damage" type="text" value="{{data.damage}}"/>
+        </div>
+        <div class="monster-description">
+            <label>{{localize "MONSTER.DESCRIPTION"}}</label>
+            <textarea name="data.description">{{data.description}}</textarea>
+        </div>
+    </div>
+</form>
