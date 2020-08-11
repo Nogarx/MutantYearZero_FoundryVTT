@@ -8,10 +8,12 @@
   "templateVersion": 2,
   "author": "Nogar",
   "scripts": [],
-  "esmodules": [
+  "esmodules": 
+  [
     "script/hooks.js"
   ],
-  "styles": [
+  "styles": 
+  [
     "style/common.css",
     "style/character.css",
     "style/monster.css",
@@ -30,7 +32,8 @@
     "style/tab/bio.css"
   ],
   "packs": [],
-  "languages": [
+  "languages": 
+  [
     {
       "lang": "en",
       "name": "English",
@@ -43,7 +46,7 @@
   "secondaryTokenAttribute": null,
   "url": "https://github.com/Nogarx/MutantYearZero_FoundryVTT",
   "socket": true,
-  "manifest": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/blob/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/Nogarx/MutantYearZero_FoundryVTT/master/system.json",
   "download": "https://github.com/Nogarx/MutantYearZero_FoundryVTT/archive/master.zip",
   "license": "LICENSE.txt"
 }
