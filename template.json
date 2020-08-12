@@ -242,24 +242,6 @@
         "bullets": {
           "label": "CONSUMABLE.BULLETS",
           "value": 0
-        },
-        "torches": {
-          "label": "CONSUMABLE.TORCHES",
-          "value": 0
-        }
-      },
-      "currency": {
-        "gold": {
-          "label": "CURRENCY.GOLD",
-          "value": 0
-        },
-        "silver": {
-          "label": "CURRENCY.SILVER",
-          "value": 0
-        },
-        "copper": {
-          "label": "CURRENCY.COPPER",
-          "value": 0
         }
       }
     },

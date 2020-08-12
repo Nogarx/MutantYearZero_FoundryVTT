@@ -5,29 +5,6 @@
   height: 100%;
 }
 
-.mutant-year-zero .character .currencies {
-}
-
-.mutant-year-zero .character .currencies .header {
-  font-variant: small-caps;
-  justify-content: space-between;
-  padding: 8px;
-}
-
-.mutant-year-zero .character .currencies .header b {
-  font-family: var(--font-special);
-}
-
-.mutant-year-zero .character .currencies .values label {
-  font-family: var(--font-special);
-  font-variant: normal;
-  margin: 0 8px;
-}
-
-.mutant-year-zero .character .currencies .values input {
-  width: 3em;
-}
-
 .mutant-year-zero .character .consumables {
   display: grid;
   gap: 8px;
