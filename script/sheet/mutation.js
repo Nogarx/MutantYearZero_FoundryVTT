@@ -3,7 +3,7 @@ export class MutantYearZeroMutationSheet extends ItemSheet {
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
             classes: ["mutant-year-zero", "sheet", "item"],
-            template: "systems/mutant-year-zero/model/spell.html",
+            template: "systems/mutant-year-zero/model/mutation.html",
             width: 400,
             height: 470,
             resizable: false
