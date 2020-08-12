@@ -128,10 +128,6 @@
   "WEIGHT.HEAVY": "Heavy",
 
   "MUTATION.NAME": "Name",
-  "MUTATION.RANK": "Rank",
-  "MUTATION.RANGE": "Range",
-  "MUTATION.DURATION": "Duration",
-  "MUTATION.INGREDIENT": "Ingredient",
   "MUTATION.DESCRIPTION": "Description",
 
   "CRITICAL_INJURY.NAME": "Name",
