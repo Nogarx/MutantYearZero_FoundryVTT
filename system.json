@@ -2,11 +2,11 @@
   "name": "mutant-year-zero",
   "title": "Mutant Year Zero",
   "description": "Mutant Year Zero game system for FoundryVTT.",
-  "version": "0.6",
+  "version": "0.7",
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.6.5",
   "templateVersion": 2,
-  "author": "Nogar",
+  "author": "Nogar et al.",
   "scripts": [],
   "esmodules": 
   [
