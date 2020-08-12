@@ -25,8 +25,8 @@
         {{#if isRawMaterial}}
         <h4>{{localize "ITEM.RAW_MATERIAL"}}</h4>
         {{/if}}
-        {{#if isSpell}}
-        <h4>{{localize "ITEM.SPELL"}}</h4>
+        {{#if isMutation}}
+        <h4>{{localize "ITEM.MUTATION"}}</h4>
         {{/if}}
         {{#if isTalent}}
         <h4>{{localize "ITEM.TALENT"}}</h4>
@@ -99,12 +99,12 @@
         <p><strong>{{localize "RAW_MATERIAL.SHELF_LIFE"}}:</strong> {{data.shelfLife}}</p>
         {{/if}}
 
-        {{#if isSpell}}
-        <p><strong>{{localize "SPELL.RANK"}}:</strong> {{data.rank}}</p>
-        <p><strong>{{localize "SPELL.RANGE"}}:</strong> {{data.range}}</p>
-        <p><strong>{{localize "SPELL.DURATION"}}:</strong> {{data.duration}}</p>
+        {{#if isMUTATION}}
+        <p><strong>{{localize "MUTATION.RANK"}}:</strong> {{data.rank}}</p>
+        <p><strong>{{localize "MUTATION.RANGE"}}:</strong> {{data.range}}</p>
+        <p><strong>{{localize "MUTATION.DURATION"}}:</strong> {{data.duration}}</p>
         {{#if data.ingredient}}
-        <p><strong>{{localize "SPELL.INGREDIENT"}}:</strong> {{data.ingredient}}</p>
+        <p><strong>{{localize "MUTATION.INGREDIENT"}}:</strong> {{data.ingredient}}</p>
         {{/if}}
         {{#if data.description}}
         <p>{{data.description}}</p>

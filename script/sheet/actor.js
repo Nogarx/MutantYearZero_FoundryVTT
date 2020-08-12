@@ -99,10 +99,10 @@ export class MutantYearZeroActorSheet extends ActorSheet {
         this.diceRoller
       );
     });
-    html.find(".roll-spell").click((ev) => {
+    html.find(".roll-mutation").click((ev) => {
       const itemId = $(ev.currentTarget).data("itemId");
-      const spell = this.actor.getOwnedItem(itemId);
-      RollDialog.prepareSpellDialog(spell);
+      const mutation = this.actor.getOwnedItem(itemId);
+      RollDialog.prepareMutationDialog(mutation);
     });
   }
 

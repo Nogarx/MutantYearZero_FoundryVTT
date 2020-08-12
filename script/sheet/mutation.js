@@ -1,4 +1,4 @@
-export class MutantYearZeroSpellSheet extends ItemSheet {
+export class MutantYearZeroMutationSheet extends ItemSheet {
 
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
