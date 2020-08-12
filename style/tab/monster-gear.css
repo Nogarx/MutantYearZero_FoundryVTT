@@ -1,49 +1,49 @@
-.forbidden-lands .monster .gears {
+.mutant-year-zero .monster .gears {
   padding-bottom: 8px;
 }
 
-.forbidden-lands .monster .gears .items .header {
+.mutant-year-zero .monster .gears .items .header {
   margin: 0;
   width: 100%;
 }
 
-.forbidden-lands .monster .gears .items div + .header {
+.mutant-year-zero .monster .gears .items div + .header {
   margin-top: 8px;
 }
 
-.forbidden-lands .monster .gears .gear {
+.mutant-year-zero .monster .gears .gear {
   align-items: center;
 }
 
-.forbidden-lands .monster .gears .name {
+.mutant-year-zero .monster .gears .name {
   align-items: center;
   flex-basis: 55%;
   display: flex;
 }
 
-.forbidden-lands .monster .gears .header .name,
-.forbidden-lands .monster .gears .name .name,
-.forbidden-lands .monster .gears .bonus,
-.forbidden-lands .monster .gears .weight,
-.forbidden-lands .monster .gears .button {
+.mutant-year-zero .monster .gears .header .name,
+.mutant-year-zero .monster .gears .name .name,
+.mutant-year-zero .monster .gears .bonus,
+.mutant-year-zero .monster .gears .weight,
+.mutant-year-zero .monster .gears .button {
   margin-left: 4px;
 }
 
-.forbidden-lands .monster .gears .bonus {
+.mutant-year-zero .monster .gears .bonus {
   flex-basis: 15%;
   text-align: center;
 }
 
-.forbidden-lands .monster .gears .bonus.broken {
+.mutant-year-zero .monster .gears .bonus.broken {
   color: #a00;
 }
 
-.forbidden-lands .monster .gears .weight {
+.mutant-year-zero .monster .gears .weight {
   flex-basis: 15%;
   text-align: center;
 }
 
-.forbidden-lands .monster .gears .button {
+.mutant-year-zero .monster .gears .button {
   flex-basis: 15%;
   font-size: 10px;
   text-align: right;

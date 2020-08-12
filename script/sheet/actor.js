@@ -1,7 +1,7 @@
 import { RollDialog } from "../dialog/roll-dialog.js";
 import DiceRoller from "../components/dice-roller.js";
 
-export class ForbiddenLandsActorSheet extends ActorSheet {
+export class MutantYearZeroActorSheet extends ActorSheet {
   diceRoller = new DiceRoller();
 
   activateListeners(html) {

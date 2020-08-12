@@ -1,10 +1,10 @@
-import { ForbiddenLandsActorSheet } from "./actor.js";
+import { MutantYearZeroActorSheet } from "./actor.js";
 
-export class ForbiddenLandsStrongholdSheet extends ForbiddenLandsActorSheet {
+export class MutantYearZeroStrongholdSheet extends MutantYearZeroActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["forbidden-lands", "sheet", "actor"],
-      template: "systems/forbidden-lands/model/stronghold.html",
+      classes: ["mutant-year-zero", "sheet", "actor"],
+      template: "systems/mutant-year-zero/model/stronghold.html",
       width: 600,
       height: 700,
       resizable: false,

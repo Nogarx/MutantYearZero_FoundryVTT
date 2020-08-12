@@ -1,6 +1,6 @@
 export const migrateWorld = async () => {
     const schemaVersion = 3.0;
-    const worldSchemaVersion = Number(game.settings.get("forbidden-lands", "worldSchemaVersion"));
+    const worldSchemaVersion = Number(game.settings.get("mutant-year-zero", "worldSchemaVersion"));
     if (worldSchemaVersion !== schemaVersion && game.user.isGM) {
         ui.notifications.info("Upgrading the world, please wait...");
         for (let actor of game.actors.entities) {
@@ -36,7 +36,7 @@ export const migrateWorld = async () => {
         for (let pack of game.packs.filter((p) => p.metadata.package === "world" && ["Actor", "Item", "Scene"].includes(p.metadata.entity))) {
           await migrateCompendium(pack, worldSchemaVersion);
         }
-        game.settings.set("forbidden-lands", "worldSchemaVersion", schemaVersion);
+        game.settings.set("mutant-year-zero", "worldSchemaVersion", schemaVersion);
         ui.notifications.info("Upgrade complete!");
     }
 };
@@ -45,8 +45,8 @@ const migrateActorData = (actor, worldSchemaVersion) => {
     const update = {};
     if (worldSchemaVersion <= 2) {
         if (actor.type === "character") {
-            if (!actor.data.condition.sleepy) {
-                update["data.condition.sleepy"] = actor.data.condition.sleepless;
+            if (!actor.data.condition.sleepless) {
+                update["data.condition.sleepless"] = actor.data.condition.sleepless;
             }
         }
     }

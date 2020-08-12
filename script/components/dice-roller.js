@@ -83,7 +83,7 @@ export default class DiceRoller {
             name: consumableName,
             result: game.i18n.localize(result)
         }
-        const html = await renderTemplate("systems/forbidden-lands/chat/consumable.html", consumableData);
+        const html = await renderTemplate("systems/mutant-year-zero/chat/consumable.html", consumableData);
         let chatData = {
             user: game.user._id,
             rollMode: game.settings.get("core", "rollMode"),
@@ -117,7 +117,7 @@ export default class DiceRoller {
             damage: numberOfSword + this.lastDamage,
             dices: this.dices
         };
-        const html = await renderTemplate("systems/forbidden-lands/chat/roll.html", rollData);
+        const html = await renderTemplate("systems/mutant-year-zero/chat/roll.html", rollData);
         let chatData = {
             user: game.user._id,
             rollMode: game.settings.get("core", "rollMode"),
@@ -146,7 +146,7 @@ export default class DiceRoller {
             powerLevel: numberOfSword + this.dices.length,
             dices: this.dices
         };
-        const html = await renderTemplate("systems/forbidden-lands/chat/roll.html", rollData);
+        const html = await renderTemplate("systems/mutant-year-zero/chat/roll.html", rollData);
         let chatData = {
             user: game.user._id,
             rollMode: game.settings.get("core", "rollMode"),

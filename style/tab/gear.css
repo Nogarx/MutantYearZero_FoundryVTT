@@ -1,96 +1,96 @@
-.forbidden-lands .gear-tab {
+.mutant-year-zero .gear-tab {
   display: grid;
   gap: 8px;
   grid-template-rows: auto 1fr auto;
   height: 100%;
 }
 
-.forbidden-lands .character .currencies {
+.mutant-year-zero .character .currencies {
 }
 
-.forbidden-lands .character .currencies .header {
+.mutant-year-zero .character .currencies .header {
   font-variant: small-caps;
   justify-content: space-between;
   padding: 8px;
 }
 
-.forbidden-lands .character .currencies .header b {
+.mutant-year-zero .character .currencies .header b {
   font-family: var(--font-special);
 }
 
-.forbidden-lands .character .currencies .values label {
+.mutant-year-zero .character .currencies .values label {
   font-family: var(--font-special);
   font-variant: normal;
   margin: 0 8px;
 }
 
-.forbidden-lands .character .currencies .values input {
+.mutant-year-zero .character .currencies .values input {
   width: 3em;
 }
 
-.forbidden-lands .character .consumables {
+.mutant-year-zero .character .consumables {
   display: grid;
   gap: 8px;
   grid-template-columns: auto auto auto auto;
 }
 
-.forbidden-lands .character .consumables .consumable {
+.mutant-year-zero .character .consumables .consumable {
   align-items: center;
   font-family: var(--font-special);
   padding: 8px 0;
   text-align: center;
 }
 
-.forbidden-lands .character .consumables .consumable select {
+.mutant-year-zero .character .consumables .consumable select {
   width: auto;
 }
 
-.forbidden-lands .character .gears {
+.mutant-year-zero .character .gears {
   padding-bottom: 8px;
 }
 
-.forbidden-lands .character .gears .items .header {
+.mutant-year-zero .character .gears .items .header {
   margin: 0;
   width: 100%;
 }
 
-.forbidden-lands .character .gears .items div + .header {
+.mutant-year-zero .character .gears .items div + .header {
   margin-top: 8px;
 }
 
-.forbidden-lands .character .gears .gear {
+.mutant-year-zero .character .gears .gear {
   align-items: center;
 }
 
-.forbidden-lands .character .gears .name {
+.mutant-year-zero .character .gears .name {
   align-items: center;
   flex-basis: 60%;
   display: flex;
 }
 
-.forbidden-lands .character .gears .header .name,
-.forbidden-lands .character .gears .name .name,
-.forbidden-lands .character .gears .bonus,
-.forbidden-lands .character .gears .weight,
-.forbidden-lands .character .gears .button {
+.mutant-year-zero .character .gears .header .name,
+.mutant-year-zero .character .gears .name .name,
+.mutant-year-zero .character .gears .bonus,
+.mutant-year-zero .character .gears .weight,
+.mutant-year-zero .character .gears .button {
   margin-left: 4px;
 }
 
-.forbidden-lands .character .gears .bonus {
+.mutant-year-zero .character .gears .bonus {
   flex-basis: 15%;
   text-align: center;
 }
 
-.forbidden-lands .character .gears .bonus.broken {
+.mutant-year-zero .character .gears .bonus.broken {
   color: #a00;
 }
 
-.forbidden-lands .character .gears .weight {
+.mutant-year-zero .character .gears .weight {
   flex-basis: 15%;
   text-align: center;
 }
 
-.forbidden-lands .character .gears .button {
+.mutant-year-zero .character .gears .button {
   flex-basis: 10%;
   font-size: 10px;
   text-align: right;

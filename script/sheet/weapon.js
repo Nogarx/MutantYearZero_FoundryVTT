@@ -1,8 +1,8 @@
-export class ForbiddenLandsWeaponSheet extends ItemSheet {
+export class MutantYearZeroWeaponSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["forbidden-lands", "sheet", "item"],
-      template: "systems/forbidden-lands/model/weapon.html",
+      classes: ["mutant-year-zero", "sheet", "item"],
+      template: "systems/mutant-year-zero/model/weapon.html",
       width: 400,
       height: 430,
       resizable: false,
