@@ -51,6 +51,18 @@
             "min": 0,
             "attribute": "strength"
           },
+          "intimidate": {
+            "label": "SKILL.INTIMIDATE",
+            "value": 0,
+            "min": 0,
+            "attribute": "strength"
+          },
+          "shake-it-off": {
+            "label": "SKILL.SHAKE_IT_OFF",
+            "value": 0,
+            "min": 0,
+            "attribute": "strength"
+          },
 
           "sneak": {
             "label": "SKILL.SNEAK",
@@ -70,6 +82,18 @@
             "min": 0,
             "attribute": "agility"
           },
+          "find-the-path": {
+            "label": "SKILL.FIND_THE_PATH",
+            "value": 0,
+            "min": 0,
+            "attribute": "agility"
+          },
+          "sic-a-dog": {
+            "label": "SKILL.SIC_A_DOG",
+            "value": 0,
+            "min": 0,
+            "attribute": "agility"
+          },
 
           "scout": {
             "label": "SKILL.SCOUT",
@@ -83,14 +107,26 @@
             "min": 0,
             "attribute": "wits"
           },
-          "know the zone": {
+          "know-the-zone": {
             "label": "SKILL.KNOW_THE_ZONE",
             "value": 0,
             "min": 0,
             "attribute": "wits"
           },
+          "jury-rig": {
+            "label": "SKILL.JURY_RIG",
+            "value": 0,
+            "min": 0,
+            "attribute": "wits"
+          },
+          "command": {
+            "label": "SKILL.COMMAND",
+            "value": 0,
+            "min": 0,
+            "attribute": "wits"
+          },
 
-          "sense emotion": {
+          "sense-emotion": {
             "label": "SKILL.SENSE_EMOTION",
             "value": 0,
             "min": 0,
@@ -107,6 +143,18 @@
             "value": 0,
             "min": 0,
             "attribute": "empathy"
+          },
+          "make-a-deal": {
+            "label": "SKILL.MAKE_A_DEAL",
+            "value": 0,
+            "min": 0,
+            "attribute": "empathy"
+          },
+          "inspire": {
+            "label": "SKILL.INSPIRE",
+            "value": 0,
+            "min": 0,
+            "attribute": "empathy"
           }
 
         }
@@ -115,28 +163,20 @@
     "character": {
       "templates": ["attributes", "skills"],
       "bio": {
-        "kin": {
-          "label": "BIO.KIN",
-          "value": ""
-        },
         "role": {
           "label": "BIO.ROLE",
           "value": ""
         },
-        "pride": {
-          "label": "BIO.PRIDE",
+        "den": {
+          "label": "BIO.DEN",
           "value": ""
         },
-        "darkSecret": {
-          "label": "BIO.DARK_SECRET",
+        "big-dream": {
+          "label": "BIO.BIG_DREAM",
           "value": ""
         },
         "age": {
           "label": "BIO.AGE",
-          "value": 0
-        },
-        "reputation": {
-          "label": "BIO.REPUTATION",
           "value": 0
         },
         "face": {
@@ -159,8 +199,14 @@
           "label": "BIO.EXPERIENCE",
           "value": 0
         },
-        "willpower": {
-          "label": "BIO.WILLPOWER",
+        "mutation-points": {
+          "label": "BIO.MUTATION_POINTS",
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "rot-points": {
+          "label": "BIO.ROT_POINTS",
           "value": 0,
           "min": 0,
           "max": 10
@@ -331,7 +377,6 @@
       "tools": "",
       "time": "",
       "effect": "",
-      "reputation": "",
       "number": 0
     },
     "hireling": {
