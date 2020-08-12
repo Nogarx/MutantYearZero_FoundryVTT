@@ -288,7 +288,7 @@
       "rawMaterial",
       "talent",
       "criticalInjury",
-      "spell",
+      "mutation",
       "monsterTalent",
       "monsterAttack",
       "building",
@@ -333,7 +333,7 @@
       "supply": "",
       "weight": "regular"
     },
-    "spell": {
+    "mutation": {
       "rank": 1,
       "range": "",
       "duration": "",

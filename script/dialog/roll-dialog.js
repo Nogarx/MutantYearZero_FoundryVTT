@@ -68,17 +68,17 @@ export class RollDialog {
     }
 
     /**
-     * @param {object}   spell       Spell data
+     * @param {object}   mutation    Mutation data
      * @param {Function} onAfterRoll Callback that is executed after roll is made
      */
-    static prepareSpellDialog(spell, onAfterRoll) {
+    static prepareMutationDialog(mutation, onAfterRoll) {
       const diceRoller = new DiceRoller();
       onAfterRoll = onAfterRoll || function () {};
 
       let baseHtml = this.buildInputHtmlDialog("Base", "base", 1);
       let successHtml = this.buildInputHtmlDialog("Automatic Success", "success", 0);
       let d = new Dialog({
-        title: "Spell: " + spell.name,
+        title: "Mutation: " + mutation.name,
         content: this.buildDivHtmlDialog(baseHtml + successHtml),
         buttons: {
           roll: {
@@ -87,7 +87,7 @@ export class RollDialog {
             callback: (html) => {
               let base = html.find("#base")[0].value;
               let success = html.find("#success")[0].value;
-              diceRoller.rollSpell(spell.name, parseInt(base, 10), parseInt(success, 10));
+              diceRoller.rollMutation(mutation.name, parseInt(base, 10), parseInt(success, 10));
               onAfterRoll(diceRoller);
             },
           },

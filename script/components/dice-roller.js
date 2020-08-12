@@ -55,8 +55,8 @@ export default class DiceRoller {
                 dice.weight = successAndWeight.weight;
             }
         });
-        if (this.lastType === "spell") {
-            this.sendRollSpellToChat(true);
+        if (this.lastType === "mutation") {
+            this.sendRollMutationToChat(true);
         } else {
             this.sendRollToChat(true);
         }
@@ -111,7 +111,7 @@ export default class DiceRoller {
         let rollData = {
             name: this.lastRollName,
             isPushed: isPushed,
-            isSpell: false,
+            isMutation: false,
             sword: numberOfSword,
             skull: numberOfSkull,
             damage: numberOfSword + this.lastDamage,
@@ -131,7 +131,7 @@ export default class DiceRoller {
         ChatMessage.create(chatData);
     }
 
-    async sendRollSpellToChat(isPushed) {
+    async sendRollMutationToChat(isPushed) {
         this.dices.sort(function (a, b) {
             return b.weight - a.weight;
         });
@@ -140,7 +140,7 @@ export default class DiceRoller {
         let rollData = {
             name: this.lastTestName,
             isPushed: isPushed,
-            isSpell: true,
+            isMutation: true,
             sword: numberOfSword,
             skull: numberOfSkull,
             powerLevel: numberOfSword + this.dices.length,
@@ -160,13 +160,13 @@ export default class DiceRoller {
         ChatMessage.create(chatData);
     }
 
-    rollSpell(testName, base, success) {
+    rollMutation(testName, base, success) {
       this.dices = [];
-      this.lastType = "spell";
+      this.lastType = "mutation";
       this.lastTestName = testName;
       this.rollDice(base, "base", 6, success);
       this.lastDamage = 0;
-      this.sendRollSpellToChat(false);
+      this.sendRollMutationToChat(false);
     }
 
     /**
@@ -175,7 +175,7 @@ export default class DiceRoller {
      * @param  {number} numberOfDice     How many dice to roll
      * @param  {string} typeOfDice       Base/skill/gear
      * @param  {number} numberOfFaces    What dice to roll
-     * @param  {number} automaticSuccess For spells
+     * @param  {number} automaticSuccess For mutations
      */
     rollDice(numberOfDice, typeOfDice, numberOfFaces, automaticSuccess) {
         if (numberOfDice > 0) {

@@ -14,7 +14,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         ".armors .item-list .items",
         ".critical-injuries .item-list .items",
         ".gears.item-list .items",
-        ".spells .item-list .items",
+        ".mutations .item-list .items",
         ".talents .item-list .items",
         ".weapons .item-list .items",
       ],
@@ -109,7 +109,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       item.isArmor = item.type === "armor";
       item.isGear = item.type === "gear";
       item.isRawMaterial = item.type === "rawMaterial";
-      item.isSpell = item.type === "spell";
+      item.isMutation = item.type === "mutation";
       item.isCriticalInjury = item.type === "criticalInjury";
     }
   }

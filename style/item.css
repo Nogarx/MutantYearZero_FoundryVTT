@@ -88,11 +88,11 @@
   height: 100px;
 }
 
-.mutant-year-zero.item .item .spell-description {
+.mutant-year-zero.item .item .mutation-description {
   grid-column: 1/-1;
 }
 
-.mutant-year-zero.item .item .spell-description textarea {
+.mutant-year-zero.item .item .mutation-description textarea {
   resize: none;
   height: 250px;
 }
