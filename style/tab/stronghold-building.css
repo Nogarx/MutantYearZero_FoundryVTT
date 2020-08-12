@@ -1,32 +1,32 @@
-.forbidden-lands .stronghold .buildings {
+.mutant-year-zero .stronghold .buildings {
   flex-basis: 50%;
 }
 
-.forbidden-lands .stronghold .buildings .building {
+.mutant-year-zero .stronghold .buildings .building {
   align-items: center;
 }
 
-.forbidden-lands .character .buildings .header .name,
-.forbidden-lands .character .buildings .name .name,
-.forbidden-lands .character .buildings .number,
-.forbidden-lands .character .buildings .button {
+.mutant-year-zero .character .buildings .header .name,
+.mutant-year-zero .character .buildings .name .name,
+.mutant-year-zero .character .buildings .number,
+.mutant-year-zero .character .buildings .button {
   margin-left: 4px;
 }
 
-.forbidden-lands .stronghold .buildings .building .name {
+.mutant-year-zero .stronghold .buildings .building .name {
   flex-basis: 75%;
 }
 
-.forbidden-lands .stronghold .buildings .building .name a {
+.mutant-year-zero .stronghold .buildings .building .name a {
   font-weight: bold;
 }
 
-.forbidden-lands .stronghold .buildings .building .number {
+.mutant-year-zero .stronghold .buildings .building .number {
   flex-basis: 15%;
   text-align: center;
 }
 
-.forbidden-lands .stronghold .buildings .building .button {
+.mutant-year-zero .stronghold .buildings .building .button {
   flex-basis: 10%;
   font-size: 10px;
   text-align: right;

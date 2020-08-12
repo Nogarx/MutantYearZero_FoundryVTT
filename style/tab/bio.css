@@ -1,4 +1,4 @@
-.forbidden-lands .character .bio-tab {
+.mutant-year-zero .character .bio-tab {
   display: grid;
   height: 100%;
   gap: 8px;
@@ -6,12 +6,12 @@
   padding: 0 8px 8px;
 }
 
-.forbidden-lands .character .bio-tab .section {
+.mutant-year-zero .character .bio-tab .section {
   display: flex;
   flex-direction: column;
 }
 
-.forbidden-lands .character .bio-tab textarea {
+.mutant-year-zero .character .bio-tab textarea {
   flex-grow: 1;
   resize: none;
 }

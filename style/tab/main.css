@@ -1,11 +1,11 @@
-.forbidden-lands .main-tab {
+.mutant-year-zero .main-tab {
   display: grid;
   gap: 8px;
   grid-template-columns: 1fr 1fr;
   height: 100%;
 }
 
-.forbidden-lands .attributes {
+.mutant-year-zero .attributes {
   align-items: baseline;
   display: grid;
   gap: 4px 8px;
@@ -13,37 +13,37 @@
   padding: 0 8px 8px;
 }
 
-.forbidden-lands .attributes h1 {
+.mutant-year-zero .attributes h1 {
   grid-column: 1/-1;
 }
 
-.forbidden-lands .attributes .name {
+.mutant-year-zero .attributes .name {
   font-family: var(--font-special);
 }
 
-.forbidden-lands .attributes .value {
+.mutant-year-zero .attributes .value {
   font-family: var(--font-special);
 }
 
-.forbidden-lands .attributes .value input {
+.mutant-year-zero .attributes .value input {
   width: 2em;
 }
 
-.forbidden-lands .attributes .broken {
+.mutant-year-zero .attributes .broken {
   color: #a00;
 }
 
-.forbidden-lands .conditions a.condition {
+.mutant-year-zero .conditions a.condition {
   flex-basis: 50%;
   font-family: var(--font-special);
   font-weight: bold;
 }
 
-.forbidden-lands .conditions .condition.active {
+.mutant-year-zero .conditions .condition.active {
   color: #a00;
 }
 
-.forbidden-lands .skills {
+.mutant-year-zero .skills {
   align-items: baseline;
   display: grid;
   flex-basis: calc(50% - 4px);
@@ -53,15 +53,15 @@
   padding: 0 8px 8px;
 }
 
-.forbidden-lands .skills h1 {
+.mutant-year-zero .skills h1 {
   grid-column: 1/-1;
 }
 
-.forbidden-lands .skills .name {
+.mutant-year-zero .skills .name {
   font-family: var(--font-special);
   flex-basis: 50%;
 }
 
-.forbidden-lands .skills input {
+.mutant-year-zero .skills input {
   width: 2em;
 }

@@ -1,9 +1,9 @@
-export class ForbiddenLandsSpellSheet extends ItemSheet {
+export class MutantYearZeroSpellSheet extends ItemSheet {
 
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-            classes: ["forbidden-lands", "sheet", "item"],
-            template: "systems/forbidden-lands/model/spell.html",
+            classes: ["mutant-year-zero", "sheet", "item"],
+            template: "systems/mutant-year-zero/model/spell.html",
             width: 400,
             height: 470,
             resizable: false
