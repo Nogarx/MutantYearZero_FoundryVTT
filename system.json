@@ -2,7 +2,7 @@
   "name": "mutant-year-zerp",
   "title": "Mutant Year Zero",
   "description": "Mutant Year Zero game system for FoundryVTT.",
-  "version": "0.0",
+  "version": "0.1",
   "minimumCoreVersion": "0.6.2",
   "compatibleCoreVersion": "0.6.5",
   "templateVersion": 2,
