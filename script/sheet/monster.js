@@ -1,11 +1,11 @@
-import { ForbiddenLandsActorSheet } from "./actor.js";
+import { MutantYearZeroActorSheet } from "./actor.js";
 import { RollDialog } from "../dialog/roll-dialog.js";
 
-export class ForbiddenLandsMonsterSheet extends ForbiddenLandsActorSheet {
+export class MutantYearZeroMonsterSheet extends MutantYearZeroActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["forbidden-lands", "sheet", "actor"],
-      template: "systems/forbidden-lands/model/monster.html",
+      classes: ["mutant-year-zero", "sheet", "actor"],
+      template: "systems/mutant-year-zero/model/monster.html",
       width: 620,
       height: 740,
       resizable: false,

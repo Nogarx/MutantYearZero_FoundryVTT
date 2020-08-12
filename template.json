@@ -32,38 +32,28 @@
       },
       "skills": {
         "skill": {
-          "might": {
-            "label": "SKILL.MIGHT",
-            "value": 0,
-            "min": 0,
-            "attribute": "strength"
-          },
+
           "endurance": {
             "label": "SKILL.ENDURANCE",
             "value": 0,
             "min": 0,
             "attribute": "strength"
           },
-          "melee": {
-            "label": "SKILL.MELEE",
+          "force": {
+            "label": "SKILL.FORCE",
             "value": 0,
             "min": 0,
             "attribute": "strength"
           },
-          "crafting": {
-            "label": "SKILL.CRAFTING",
+          "fight": {
+            "label": "SKILL.FIGHT",
             "value": 0,
             "min": 0,
             "attribute": "strength"
           },
-          "stealth": {
-            "label": "SKILL.STEALTH",
-            "value": 0,
-            "min": 0,
-            "attribute": "agility"
-          },
-          "sleight-of-hand": {
-            "label": "SKILL.SLEIGHT_OF_HAND",
+
+          "sneak": {
+            "label": "SKILL.SNEAK",
             "value": 0,
             "min": 0,
             "attribute": "agility"
@@ -74,35 +64,37 @@
             "min": 0,
             "attribute": "agility"
           },
-          "marksmanship": {
-            "label": "SKILL.MARKSMANSHIP",
+          "shoot": {
+            "label": "SKILL.SHOOT",
             "value": 0,
             "min": 0,
             "attribute": "agility"
           },
-          "scouting": {
-            "label": "SKILL.SCOUTING",
+
+          "scout": {
+            "label": "SKILL.SCOUT",
             "value": 0,
             "min": 0,
             "attribute": "wits"
           },
-          "lore": {
-            "label": "SKILL.LORE",
+          "comprehend": {
+            "label": "SKILL.COMPREHEND",
             "value": 0,
             "min": 0,
             "attribute": "wits"
           },
-          "survival": {
-            "label": "SKILL.SURVIVAL",
+          "know the zone": {
+            "label": "SKILL.KNOW_THE_ZONE",
             "value": 0,
             "min": 0,
             "attribute": "wits"
           },
-          "insight": {
-            "label": "SKILL.INSIGHT",
+
+          "sense emotion": {
+            "label": "SKILL.SENSE_EMOTION",
             "value": 0,
             "min": 0,
-            "attribute": "wits"
+            "attribute": "empathy"
           },
           "manipulation": {
             "label": "SKILL.MANIPULATION",
@@ -110,24 +102,13 @@
             "min": 0,
             "attribute": "empathy"
           },
-          "performance": {
-            "label": "SKILL.PERFORMANCE",
-            "value": 0,
-            "min": 0,
-            "attribute": "empathy"
-          },
-          "healing": {
-            "label": "SKILL.HEALING",
-            "value": 0,
-            "min": 0,
-            "attribute": "empathy"
-          },
-          "animal-handling": {
-            "label": "SKILL.ANIMAL_HANDLING",
+          "heal": {
+            "label": "SKILL.HEAL",
             "value": 0,
             "min": 0,
             "attribute": "empathy"
           }
+
         }
       }
     },
@@ -138,8 +119,8 @@
           "label": "BIO.KIN",
           "value": ""
         },
-        "profession": {
-          "label": "BIO.PROFESSION",
+        "role": {
+          "label": "BIO.ROLE",
           "value": ""
         },
         "pride": {
@@ -186,34 +167,34 @@
         }
       },
       "condition": {
-        "sleepy": {
-          "label": "CONDITION.SLEEPY",
+        "sleepless": {
+          "label": "CONDITION.SLEEPLESS",
           "value": false
         },
-        "thirsty": {
-          "label": "CONDITION.THIRSTY",
+        "dehytrated": {
+          "label": "CONDITION.DEHYDRATED",
           "value": false
         },
-        "hungry": {
-          "label": "CONDITION.HUNGRY",
+        "starving": {
+          "label": "CONDITION.STARVING",
           "value": false
         },
-        "cold": {
-          "label": "CONDITION.COLD",
+        "hypothermic": {
+          "label": "CONDITION.HYPOTHERMIC",
           "value": false
         }
       },
       "consumable": {
-        "food": {
-          "label": "CONSUMABLE.FOOD",
+        "grub": {
+          "label": "CONSUMABLE.GRUB",
           "value": 0
         },
         "water": {
           "label": "CONSUMABLE.WATER",
           "value": 0
         },
-        "arrows": {
-          "label": "CONSUMABLE.ARROWS",
+        "bullets": {
+          "label": "CONSUMABLE.BULLETS",
           "value": 0
         },
         "torches": {
