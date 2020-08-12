@@ -52,10 +52,6 @@
   flex-direction: row;
 }
 
-.mutant-year-zero .character .bio .kin input {
-  width: 10em;
-}
-
 .mutant-year-zero .character .bio .role input {
   width: 14em;
 }
@@ -64,11 +60,11 @@
   width: 4em;
 }
 
-.mutant-year-zero .character .bio .reputation input {
+.mutant-year-zero .character .bio .rot-points input {
   width: 2em;
 }
 
-.mutant-year-zero .character .bio .willpower input {
+.mutant-year-zero .character .bio .mutation-points input {
   width: 2em;
 }
 
