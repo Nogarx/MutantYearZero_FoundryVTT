@@ -12,6 +12,7 @@
   "BIO.MUTATION_POINTS": "Mutation Points",
   "BIO.ROT_POINTS": "Rot Points",
 
+  "ROLE.SELECT": "Select a Role",
   "ROLE.ENFORCER": "Enforcer",
   "ROLE.GEARHEAD": "Gearhead",
   "ROLE.STALKER": "Stalker",

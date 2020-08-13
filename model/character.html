@@ -6,16 +6,22 @@
                     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
                 </div>
                 <div class="flex column grow">
-                    <div class="name bio-row">
-                        <label>{{localize "BIO.NAME"}}:</label>
-                        <input name="name" type="text" value="{{actor.name}}" />
-                    </div>
                     <div class="bio-row">
+                        <div class="name">
+                            <label>{{localize "BIO.NAME"}}:</label>
+                            <input name="name" type="text" value="{{actor.name}}" />
+                        </div>
+                        <div class="age">
+                            <label>{{localize data.bio.age.label}}:</label>
+                            <input name="data.bio.age.value" type="number" value="{{data.bio.age.value}}"
+                                data-dtype="Number" />
+                        </div>
                         <div class="role">
                             <label>{{localize data.bio.role.label}}:</label>
                             <!-- <input name="data.bio.role.value" type="text" value="{{data.bio.role.value}}" /> -->
                             <select name="data.bio.role.value">
                                 {{#select data.bio.role.value}}
+                                <option hidden disabled selected value> {{localize "ROLE.SELECT"}} </option>
                                 <option value="enforcer">{{localize "ROLE.ENFORCER"}}</option>
                                 <option value="gearhead">{{localize "ROLE.GEARHEAD"}}</option>
                                 <option value="stalker">{{localize "ROLE.STALKER"}}</option>
@@ -29,11 +35,6 @@
                         </div>
                     </div>
                     <div class="bio-row">
-                        <div class="age">
-                            <label>{{localize data.bio.age.label}}:</label>
-                            <input name="data.bio.age.value" type="number" value="{{data.bio.age.value}}"
-                                data-dtype="Number" />
-                        </div>
                         <div class="experience">
                             <label>{{localize data.bio.experience.label}}:</label>
                             <input name="data.bio.experience.value" type="number" value="{{data.bio.experience.value}}"
