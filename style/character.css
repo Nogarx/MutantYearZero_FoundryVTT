@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 5px 0;
-  box-sizing: border-box;
 }
 
 .mutant-year-zero .character .bio .avatar {
@@ -58,10 +57,14 @@
 }
 
 .mutant-year-zero .character .bio .role input {
+  display: flex;
+  flex-direction: row;
   width: 10em;
 }
 
 .mutant-year-zero .character .bio .age input {
+  display: flex;
+  flex-direction: row;
   width: 3em;
 }
 

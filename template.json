@@ -239,7 +239,7 @@
           "label": "CONDITION.SLEEPLESS",
           "value": false
         },
-        "dehytrated": {
+        "dehydrated": {
           "label": "CONDITION.DEHYDRATED",
           "value": false
         },
