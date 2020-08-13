@@ -3,6 +3,9 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background-image:url(../asset/sheet-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .mutant-year-zero .character .bio label {
