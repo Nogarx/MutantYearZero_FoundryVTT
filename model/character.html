@@ -13,7 +13,19 @@
                     <div class="bio-row">
                         <div class="role">
                             <label>{{localize data.bio.role.label}}:</label>
-                            <input name="data.bio.role.value" type="text" value="{{data.bio.role.value}}" />
+                            <!-- <input name="data.bio.role.value" type="text" value="{{data.bio.role.value}}" /> -->
+                            <select name="data.bio.role.value">
+                                {{#select data.bio.role.value}}
+                                <option value="enforcer">{{localize "ROLE.ENFORCER"}}</option>
+                                <option value="gearhead">{{localize "ROLE.GEARHEAD"}}</option>
+                                <option value="stalker">{{localize "ROLE.STALKER"}}</option>
+                                <option value="fixer">{{localize "ROLE.FIXER"}}</option>
+                                <option value="dog-handler">{{localize "ROLE.DOG_HANDLER"}}</option>
+                                <option value="chronicler">{{localize "ROLE.CHRONICLER"}}</option>
+                                <option value="boss">{{localize "ROLE.BOSS"}}</option>
+                                <option value="slave">{{localize "ROLE.SLAVE"}}</option>                          
+                                {{/select}}
+                            </select>
                         </div>
                     </div>
                     <div class="bio-row">

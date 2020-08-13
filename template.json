@@ -165,7 +165,8 @@
       "bio": {
         "role": {
           "label": "BIO.ROLE",
-          "value": ""
+          "value": "",
+          "role-list": ["role1", "role2"]
         },
         "den": {
           "label": "BIO.DEN",
@@ -197,7 +198,9 @@
         },
         "experience": {
           "label": "BIO.EXPERIENCE",
-          "value": 0
+          "value": 0,
+          "min": 0,
+          "max": 10
         },
         "mutation-points": {
           "label": "BIO.MUTATION_POINTS",
