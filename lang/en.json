@@ -12,6 +12,15 @@
   "BIO.MUTATION_POINTS": "Mutation Points",
   "BIO.ROT_POINTS": "Rot Points",
 
+  "ROLE.ENFORCER": "Enforcer",
+  "ROLE.GEARHEAD": "Gearhead",
+  "ROLE.STALKER": "Stalker",
+  "ROLE.FIXER": "Fixer",
+  "ROLE.DOG_HANDLER": "Dog Handler",
+  "ROLE.CHRONICLER": "Chronicler",
+  "ROLE.BOSS": "Boss",
+  "ROLE.SLAVE": "Slave",
+
   "ATTRIBUTE.STRENGTH": "Strength",
   "ATTRIBUTE.AGILITY": "Agility",
   "ATTRIBUTE.WITS": "Wits",
