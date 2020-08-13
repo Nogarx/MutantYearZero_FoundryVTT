@@ -53,14 +53,15 @@
 .mutant-year-zero .character .bio .name {
   display: flex;
   flex-direction: row;
+  width: 15em;
 }
 
 .mutant-year-zero .character .bio .role input {
-  width: 14em;
+  width: 10em;
 }
 
 .mutant-year-zero .character .bio .age input {
-  width: 4em;
+  width: 3em;
 }
 
 .mutant-year-zero .character .bio .rot-points input {
