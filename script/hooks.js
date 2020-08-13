@@ -1,18 +1,18 @@
-import { ForbiddenLandsActor, ForbiddenLandsItem } from "./actor/forbidden-lands.js";
-import { ForbiddenLandsCharacterSheet } from "./sheet/character.js";
-import { ForbiddenLandsMonsterSheet } from "./sheet/monster.js";
-import { ForbiddenLandsStrongholdSheet } from "./sheet/stronghold.js";
-import { ForbiddenLandsWeaponSheet } from "./sheet/weapon.js";
-import { ForbiddenLandsArmorSheet } from "./sheet/armor.js";
-import { ForbiddenLandsGearSheet } from "./sheet/gear.js";
-import { ForbiddenLandsRawMaterialSheet } from "./sheet/raw-material.js";
-import { ForbiddenLandsSpellSheet } from "./sheet/spell.js";
-import { ForbiddenLandsTalentSheet } from "./sheet/talent.js";
-import { ForbiddenLandsCriticalInjurySheet } from "./sheet/critical-injury.js";
-import { ForbiddenLandsMonsterTalentSheet } from "./sheet/monster-talent.js";
-import { ForbiddenLandsMonsterAttackSheet } from "./sheet/monster-attack.js";
-import { ForbiddenLandsBuildingSheet } from "./sheet/building.js";
-import { ForbiddenLandsHirelingSheet } from "./sheet/hireling.js";
+import { MutantYearZeroActor, MutantYearZeroItem } from "./actor/mutant-year-zero.js";
+import { MutantYearZeroCharacterSheet } from "./sheet/character.js";
+import { MutantYearZeroMonsterSheet } from "./sheet/monster.js";
+import { MutantYearZeroStrongholdSheet } from "./sheet/stronghold.js";
+import { MutantYearZeroWeaponSheet } from "./sheet/weapon.js";
+import { MutantYearZeroArmorSheet } from "./sheet/armor.js";
+import { MutantYearZeroGearSheet } from "./sheet/gear.js";
+import { MutantYearZeroRawMaterialSheet } from "./sheet/raw-material.js";
+import { MutantYearZeroSpellSheet } from "./sheet/spell.js";
+import { MutantYearZeroTalentSheet } from "./sheet/talent.js";
+import { MutantYearZeroCriticalInjurySheet } from "./sheet/critical-injury.js";
+import { MutantYearZeroMonsterTalentSheet } from "./sheet/monster-talent.js";
+import { MutantYearZeroMonsterAttackSheet } from "./sheet/monster-attack.js";
+import { MutantYearZeroBuildingSheet } from "./sheet/building.js";
+import { MutantYearZeroHirelingSheet } from "./sheet/hireling.js";
 import { initializeHandlebars } from "./handlebars.js";
 import { migrateWorld } from "./migration.js";
 
@@ -20,30 +20,30 @@ import { migrateWorld } from "./migration.js";
 
 Hooks.once("init", () => {
   CONFIG.Combat.initiative = { formula: "1d10", decimals: 0 };
-  CONFIG.Actor.entityClass = ForbiddenLandsActor;
-  CONFIG.Item.entityClass = ForbiddenLandsItem;
+  CONFIG.Actor.entityClass = MutantYearZeroActor;
+  CONFIG.Item.entityClass = MutantYearZeroItem;
   CONFIG.fontFamilies.push("IM Fell Great Primer");
   CONFIG.fontFamilies.push("IM Fell DW Pica");
   CONFIG.fontFamilies.push("IM Fell DW Pica SC");
   CONFIG.fontFamilies.push("Poppins");
   CONFIG.defaultFontFamily = "IM Fell DW Pica";
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("forbidden-lands", ForbiddenLandsCharacterSheet, { types: ["character"], makeDefault: true });
-  Actors.registerSheet("forbidden-lands", ForbiddenLandsMonsterSheet, { types: ["monster"], makeDefault: true });
-  Actors.registerSheet("forbidden-lands", ForbiddenLandsStrongholdSheet, { types: ["stronghold"], makeDefault: true });
+  Actors.registerSheet("mutant-year-zero", MutantYearZeroCharacterSheet, { types: ["character"], makeDefault: true });
+  Actors.registerSheet("mutant-year-zero", MutantYearZeroMonsterSheet, { types: ["monster"], makeDefault: true });
+  Actors.registerSheet("mutant-year-zero", MutantYearZeroStrongholdSheet, { types: ["stronghold"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("forbidden-lands", ForbiddenLandsWeaponSheet, { types: ["weapon"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsArmorSheet, { types: ["armor"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsGearSheet, { types: ["gear"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsRawMaterialSheet, { types: ["rawMaterial"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsSpellSheet, { types: ["spell"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsTalentSheet, { types: ["talent"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsCriticalInjurySheet, { types: ["criticalInjury"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsMonsterTalentSheet, { types: ["monsterTalent"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsMonsterAttackSheet, { types: ["monsterAttack"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsBuildingSheet, { types: ["building"], makeDefault: true });
-  Items.registerSheet("forbidden-lands", ForbiddenLandsHirelingSheet, { types: ["hireling"], makeDefault: true });
-  game.settings.register("forbidden-lands", "worldSchemaVersion", {
+  Items.registerSheet("mutant-year-zero", MutantYearZeroWeaponSheet, { types: ["weapon"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroArmorSheet, { types: ["armor"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroGearSheet, { types: ["gear"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroRawMaterialSheet, { types: ["rawMaterial"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroSpellSheet, { types: ["spell"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroTalentSheet, { types: ["talent"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroCriticalInjurySheet, { types: ["criticalInjury"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroMonsterTalentSheet, { types: ["monsterTalent"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroMonsterAttackSheet, { types: ["monsterAttack"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroBuildingSheet, { types: ["building"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroHirelingSheet, { types: ["hireling"], makeDefault: true });
+  game.settings.register("mutant-year-zero", "worldSchemaVersion", {
     name: "World Version",
     hint: "Used to automatically upgrade worlds data when the system is upgraded.",
     scope: "world",

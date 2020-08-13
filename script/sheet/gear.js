@@ -1,8 +1,8 @@
-export class ForbiddenLandsGearSheet extends ItemSheet {
+export class MutantYearZeroGearSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["forbidden-lands", "sheet", "item"],
-      template: "systems/forbidden-lands/model/gear.html",
+      classes: ["mutant-year-zero", "sheet", "item"],
+      template: "systems/mutant-year-zero/model/gear.html",
       width: 400,
       height: 350,
       resizable: false,

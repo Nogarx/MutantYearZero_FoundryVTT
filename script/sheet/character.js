@@ -1,12 +1,12 @@
-import { ForbiddenLandsActorSheet } from "./actor.js";
+import { MutantYearZeroActorSheet } from "./actor.js";
 import { RollDialog } from "../dialog/roll-dialog.js";
 
-export class ForbiddenLandsCharacterSheet extends ForbiddenLandsActorSheet {
+export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
 
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["forbidden-lands", "sheet", "actor"],
-      template: "systems/forbidden-lands/model/character.html",
+      classes: ["mutant-year-zero", "sheet", "actor"],
+      template: "systems/mutant-year-zero/model/character.html",
       width: 620,
       height: 740,
       resizable: false,
@@ -44,13 +44,13 @@ export class ForbiddenLandsCharacterSheet extends ForbiddenLandsActorSheet {
       const conditionName = $(ev.currentTarget).data("condition");
       const conditionValue = this.actor.data.data.condition[conditionName].value;
       if (conditionName === "sleepy") {
-        this.actor.update({"data.condition.sleepy.value": !conditionValue,});
+        this.actor.update({"data.condition.sleepless.value": !conditionValue,});
       } else if (conditionName === "thirsty") {
-        this.actor.update({ "data.condition.thirsty.value": !conditionValue });
+        this.actor.update({ "data.condition.dehydrated.value": !conditionValue });
       } else if (conditionName === "hungry") {
-        this.actor.update({ "data.condition.hungry.value": !conditionValue });
+        this.actor.update({ "data.condition.starving.value": !conditionValue });
       } else if (conditionName === "cold") {
-        this.actor.update({ "data.condition.cold.value": !conditionValue });
+        this.actor.update({ "data.condition.hypothermic.value": !conditionValue });
       }
       this._render();
     });
