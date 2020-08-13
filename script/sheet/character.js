@@ -100,7 +100,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       skill.hasWits = skill.attribute === "wits";
       skill.hasEmpathy = skill.attribute === "empathy";
       skill.isCommonSkill = skill.requiresClass === "none";
-      skill.hasClassSkill = skill.requiresClass === data.bio.role.value;
+      //skill.hasClassSkill = skill.requiresClass === data.bio.role.value;
     }
   }
 
