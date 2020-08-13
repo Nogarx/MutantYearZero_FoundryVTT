@@ -58,7 +58,8 @@
 }
 
 .mutant-year-zero .border {
-  border: 10px rgb(34, 34, 34) solid transparent;
+  border: 10px rgb(34, 34, 34) solid;
+  /*border: 10px rgb(34, 34, 34) solid transparent;*/
   /*border-image: url("../asset/border-small.png") 20/10px round;*/
 }
 
