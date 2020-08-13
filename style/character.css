@@ -51,21 +51,24 @@
 }
 
 .mutant-year-zero .character .bio .name {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  width: 15em;
+  width: 15em;*/
+  flex: 2;
 }
 
 .mutant-year-zero .character .bio .role input {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  width: 10em;
+  width: 10em;*/
+  flex: 2;
 }
 
 .mutant-year-zero .character .bio .age input {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  width: 3em;
+  width: 3em;*/
+  flex: 1;
 }
 
 .mutant-year-zero .character .bio .rot-points input {
