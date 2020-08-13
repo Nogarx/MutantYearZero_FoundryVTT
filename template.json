@@ -37,30 +37,35 @@
             "label": "SKILL.ENDURANCE",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "strength"
           },
           "force": {
             "label": "SKILL.FORCE",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "strength"
           },
           "fight": {
             "label": "SKILL.FIGHT",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "strength"
           },
           "intimidate": {
             "label": "SKILL.INTIMIDATE",
             "value": 0,
             "min": 0,
+            "requiresClass": "enforcer",
             "attribute": "strength"
           },
           "shake-it-off": {
             "label": "SKILL.SHAKE_IT_OFF",
             "value": 0,
             "min": 0,
+            "requiresClass": "slave",
             "attribute": "strength"
           },
 
@@ -68,30 +73,35 @@
             "label": "SKILL.SNEAK",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "agility"
           },
           "move": {
             "label": "SKILL.MOVE",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "agility"
           },
           "shoot": {
             "label": "SKILL.SHOOT",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "agility"
           },
           "find-the-path": {
             "label": "SKILL.FIND_THE_PATH",
             "value": 0,
             "min": 0,
+            "requiresClass": "stalker",
             "attribute": "agility"
           },
           "sic-a-dog": {
             "label": "SKILL.SIC_A_DOG",
             "value": 0,
             "min": 0,
+            "requiresClass": "dog-handler",
             "attribute": "agility"
           },
 
@@ -99,30 +109,35 @@
             "label": "SKILL.SCOUT",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "wits"
           },
           "comprehend": {
             "label": "SKILL.COMPREHEND",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "wits"
           },
           "know-the-zone": {
             "label": "SKILL.KNOW_THE_ZONE",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "wits"
           },
           "jury-rig": {
             "label": "SKILL.JURY_RIG",
             "value": 0,
             "min": 0,
+            "requiresClass": "gearhead",
             "attribute": "wits"
           },
           "command": {
             "label": "SKILL.COMMAND",
             "value": 0,
             "min": 0,
+            "requiresClass": "boss",
             "attribute": "wits"
           },
 
@@ -130,30 +145,35 @@
             "label": "SKILL.SENSE_EMOTION",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "empathy"
           },
           "manipulation": {
             "label": "SKILL.MANIPULATION",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "empathy"
           },
           "heal": {
             "label": "SKILL.HEAL",
             "value": 0,
             "min": 0,
+            "requiresClass": "none",
             "attribute": "empathy"
           },
           "make-a-deal": {
             "label": "SKILL.MAKE_A_DEAL",
             "value": 0,
             "min": 0,
+            "requiresClass": "fixer",
             "attribute": "empathy"
           },
           "inspire": {
             "label": "SKILL.INSPIRE",
             "value": 0,
             "min": 0,
+            "requiresClass": "chronicler",
             "attribute": "empathy"
           }
 
@@ -165,8 +185,7 @@
       "bio": {
         "role": {
           "label": "BIO.ROLE",
-          "value": "",
-          "role-list": ["role1", "role2"]
+          "value": ""
         },
         "den": {
           "label": "BIO.DEN",
