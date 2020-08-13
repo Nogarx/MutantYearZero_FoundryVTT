@@ -12,13 +12,12 @@
                             <input name="name" type="text" value="{{actor.name}}" />
                         </div>
                         <div class="age">
-                            <label>{{localize data.bio.age.label}}:</label>
+                            <label>{{localize "BIO.AGE"}}:</label>
                             <input name="data.bio.age.value" type="number" value="{{data.bio.age.value}}"
                                 data-dtype="Number" />
                         </div>
                         <div class="role">
-                            <label>{{localize data.bio.role.label}}:</label>
-                            <!-- <input name="data.bio.role.value" type="text" value="{{data.bio.role.value}}" /> -->
+                            <label>{{localize "BIO.ROLE"}}:</label>
                             <select name="data.bio.role.value">
                                 {{#select data.bio.role.value}}
                                 <option hidden disabled selected value> {{localize "ROLE.SELECT"}} </option>
