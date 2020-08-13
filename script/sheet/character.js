@@ -43,13 +43,13 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
     html.find(".condition").click(async (ev) => {
       const conditionName = $(ev.currentTarget).data("condition");
       const conditionValue = this.actor.data.data.condition[conditionName].value;
-      if (conditionName === "sleepy") {
+      if (conditionName === "sleepless") {
         this.actor.update({"data.condition.sleepless.value": !conditionValue,});
-      } else if (conditionName === "thirsty") {
+      } else if (conditionName === "dehydrated") {
         this.actor.update({ "data.condition.dehydrated.value": !conditionValue });
-      } else if (conditionName === "hungry") {
+      } else if (conditionName === "starving") {
         this.actor.update({ "data.condition.starving.value": !conditionValue });
-      } else if (conditionName === "cold") {
+      } else if (conditionName === "hypothermic") {
         this.actor.update({ "data.condition.hypothermic.value": !conditionValue });
       }
       this._render();

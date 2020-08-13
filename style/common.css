@@ -58,7 +58,8 @@
 }
 
 .mutant-year-zero .border {
-  border: 10px rgb(34, 34, 34) solid;
+  border: 3px rgb(34, 34, 34) solid;
+  padding: 3px;
   /*border: 10px rgb(34, 34, 34) solid transparent;*/
   /*border-image: url("../asset/border-small.png") 20/10px round;*/
 }
@@ -158,7 +159,9 @@
 }
 .mutant-year-zero button:focus,
 .mutant-year-zero button:hover {
-  background: var(--color-highlight);
+  cursor: pointer;
+  text-shadow: 0 0 8px red;
+    /*background: var(--color-highlight);*/
 }
 
 .mutant-year-zero input[type="number"],
@@ -263,7 +266,9 @@
 }
 .mutant-year-zero .item-list .items .item:nth-child(odd) button:focus,
 .mutant-year-zero .item-list .items .item:nth-child(odd) button:hover {
-  background: var(--color-background);
+  cursor: pointer;
+  text-shadow: 0 0 8px red;
+  /*background: var(--color-background);*/
 }
 
 .mutant-year-zero .item-list .items .item .image-container {
