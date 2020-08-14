@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .mutant-year-zero .character .bio .avatar {
@@ -44,56 +45,34 @@
   margin: auto;
 }
 .mutant-year-zero .character .bio .avatar img:hover {
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px blue;
   cursor: pointer;
 }
 
-.mutant-year-zero .character .bio .name {
-  flex-basis: 40%;
-}
-
-.mutant-year-zero .character .bio .role {
-  flex-basis: 35%;
-}
-
-.mutant-year-zero .character .bio .age {
-  flex-basis: 15%;
-}
-
-.mutant-year-zero .character .bio .rot-points {
-  flex-basis: 30%;
-}
-
-.mutant-year-zero .character .bio .mutation-points {
-  flex-basis: 30%;
-}
-
-.mutant-year-zero .character .bio .experience {
-  flex-basis: 30%;
-}
-
 .mutant-year-zero .character .bio .name input {
-  flex-basis: 50%;
+  width: 10em;
 }
 
-.mutant-year-zero .character .bio .role input {
-  flex-basis: 50%;
+.mutant-year-zero .character .bio .role select {
+  display: inline-block;
+  width: 10em;
+  margin: 0px 8px;
 }
 
 .mutant-year-zero .character .bio .age input {
-  flex-basis: 50%;
+  width: 3em;
 }
 
 .mutant-year-zero .character .bio .rot-points input {
-  flex-basis: 50%;
+  width: 3em;
 }
 
 .mutant-year-zero .character .bio .mutation-points input {
-  flex-basis: 50%;
+  width: 3em;
 }
 
 .mutant-year-zero .character .bio .experience input {
-  flex-basis: 50%;
+  width: 3em;
 }
 
 .mutant-year-zero .character .roll {
