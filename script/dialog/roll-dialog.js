@@ -24,15 +24,15 @@ export class RollDialog {
         if (typeof baseDefault !== 'object') baseDefault = { name: "Base", value: baseDefault };
         if (typeof skillDefault !== 'object') skillDefault = { name: "Skill", value: skillDefault };
 
-        let baseHtml = this.buildInputHtmlDialog(baseDefault.name, baseDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), baseDefault.value);
-        let skillHtml = this.buildInputHtmlDialog(skillDefault.name, skillDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), skillDefault.value);
+        let baseHtml = this.buildDisableInpuHtmlDialog(baseDefault.name, baseDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), baseDefault.value);
+        let skillHtml = this.buildDisableInpuHtmlDialog(skillDefault.name, skillDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), skillDefault.value);
         let gearHtml = this.buildInputHtmlDialog("Gear", "gear", gearDefault);
         let artifactHtml = this.buildInputHtmlDialog("Artifacts", "artifacts", artifactDefault);
         let modifierHtml = this.buildInputHtmlDialog("Modifier", "modifier", modifierDefault);
 
         let d = new Dialog({
             title: "Roll : " + rollName,
-            content: this.buildDivHtmlDialog(baseHtml + skillHtml + gearHtml + artifactHtml + modifierHtml),
+            content: this.buildDivHtmlDialog(baseHtml + skillHtml + gearHtml + modifierHtml),
             buttons: {
                 roll: {
                     icon: '<i class="fas fa-check"></i>',
@@ -118,6 +118,15 @@ export class RollDialog {
     static buildInputHtmlDialog(diceName, diceId, diceValue) {
         return "<b>" + diceName + "</b><input id='" + diceId  + "' style='text-align: center' type='text' value='" + diceValue + "'/>";
     }
+
+    /**
+     * @param  {string} diceName
+     * @param  {string} diceId
+     * @param  {number} diceValue
+     */
+    static buildDisableInpuHtmlDialog(diceName, diceId, diceValue) {
+      return "<b>" + diceName + "</b><input id='" + diceId  + "' style='text-align: center' type='text' value='" + diceValue + "'disabled/>";
+  }
 
     /**
      * Parse artifact dice string

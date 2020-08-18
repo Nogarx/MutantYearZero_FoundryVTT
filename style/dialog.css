@@ -5,8 +5,10 @@
 
 .roll-dialog b {
     flex-basis: 25%;
+    margin: 5px;
 }
 
 .roll-dialog input {
-    flex-basis: 75%;
+    flex-basis: 5em;
+    margin: 5px;
 }

@@ -32,7 +32,24 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
     const data = super.getData();
     this.computeSkills(data);
     this.computeItems(data);
+    this.capValues(data);
     return data;
+  }
+
+  capValues(data) {
+    // Cap attribute scores
+    for (let attribute of Object.values(data.data.attribute)) {
+      if (attribute.max > 5) { attribute.max = 5; }
+      if (attribute.max < 2) { attribute.max = 2; }
+      if (attribute.value > attribute.max) { attribute.value = attribute.max; }
+      if (attribute.value < 0) { attribute.value = 0; }
+    }
+
+    //Cap Skill scores
+    for (let skill of Object.values(data.data.skill)) {
+      if (skill.value > skill.max) { skill.value = skill.max; }
+      if (skill.value < skill.min) { skill.value = skill.min; }
+    }
   }
 
   activateListeners(html) {

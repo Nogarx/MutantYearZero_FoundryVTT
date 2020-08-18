@@ -30,6 +30,7 @@ function preloadHandlebarsTemplates() {
 }
 
 function registerHandlebarsHelpers() {
+
   Handlebars.registerHelper("skulls", function (current, max, block) {
     var acc = "";
     for (var i = 0; i < max; ++i) {
@@ -39,6 +40,7 @@ function registerHandlebarsHelpers() {
     }
     return acc;
   });
+
   Handlebars.registerHelper("armorPart", function (part) {
     part = normalize(part, "body");
     switch (part) {
@@ -50,6 +52,7 @@ function registerHandlebarsHelpers() {
         return game.i18n.localize("ARMOR.SHIELD");
     }
   });
+
   Handlebars.registerHelper("itemWeight", function (weight) {
     weight = normalize(weight, "regular");
     switch (weight) {
@@ -63,6 +66,7 @@ function registerHandlebarsHelpers() {
         return game.i18n.localize("WEIGHT.HEAVY");
     }
   });
+
   Handlebars.registerHelper("weaponCategory", function (category) {
     category = normalize(category, "melee");
     switch (category) {
@@ -72,6 +76,7 @@ function registerHandlebarsHelpers() {
         return game.i18n.localize("WEAPON.RANGED");
     }
   });
+
   Handlebars.registerHelper("weaponGrip", function (grip) {
     grip = normalize(grip, "1h");
     switch (grip) {
@@ -81,6 +86,7 @@ function registerHandlebarsHelpers() {
         return game.i18n.localize("WEAPON.2H");
     }
   });
+
   Handlebars.registerHelper("weaponRange", function (range) {
     range = normalize(range, "arm");
     switch (range) {
@@ -96,6 +102,7 @@ function registerHandlebarsHelpers() {
         return game.i18n.localize("RANGE.DISTANT");
     }
   });
+
   Handlebars.registerHelper("isBroken", function (item) {
     if (parseInt(item.data.bonus.max, 10) > 0 && parseInt(item.data.bonus.value, 10) === 0) {
       return "broken";
@@ -103,6 +110,7 @@ function registerHandlebarsHelpers() {
       return "";
     }
   });
+
   Handlebars.registerHelper('plaintextToHTML', function(value) {
     // strip tags, add <br/> tags
     return new Handlebars.SafeString(value.replace(/(<([^>]+)>)/gi, "").replace(/(?:\r\n|\r|\n)/g, '<br/>'));
