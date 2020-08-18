@@ -60,6 +60,7 @@
 .mutant-year-zero .border {
   border: 3px rgb(34, 34, 34) solid;
   padding: 3px;
+  border-radius: 4px;
   /*border: 10px rgb(34, 34, 34) solid transparent;*/
   /*border-image: url("../asset/border-small.png") 20/10px round;*/
 }
@@ -128,6 +129,7 @@
 .mutant-year-zero .tabs .item {
   padding: 5px;
 }
+
 .mutant-year-zero .tabs .item.active {
   color: #fff;
   text-shadow: 0 0 10px #fff;
@@ -163,6 +165,28 @@
   text-shadow: 0 0 8px red;
     /*background: var(--color-highlight);*/
 }
+
+
+.mutant-year-zero .valueButton {
+  width: 30px;
+  height: 30px;
+  border:solid 2px rgba(34, 34, 34, 0.5);
+  border-radius: 4px;
+  background: rgba(34, 34, 34, 0);
+  font-size: 15px;
+  line-height: inherit;
+  padding: 2px 4px;
+}
+.mutant-year-zero .valueButton:focus,
+.mutant-year-zero .valueButton:hover {
+  cursor: pointer;
+  border:solid 2px rgba(34, 34, 34, 1);
+  box-shadow: 0 0 8px red;
+  text-shadow: 0 0 8px red;
+    /*background: var(--color-highlight);*/
+}
+
+
 
 .mutant-year-zero input[type="number"],
 .mutant-year-zero input[type="text"],
