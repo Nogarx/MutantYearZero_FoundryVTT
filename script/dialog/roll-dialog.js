@@ -9,13 +9,12 @@ export class RollDialog {
      * @param  {object|number} baseDefault     {name: "somename", value: 5} | 5
      * @param  {object|number} skillDefault    {name: "somename", value: 5} | 5
      * @param  {number}        gearDefault
-     * @param  {string}        artifactDefault
      * @param  {number}        modifierDefault
      * @param  {number}        damage
      * @param  {DiceRoller}    diceRoller
      * @param  {callback}      [onAfterRoll]
      */
-    static prepareRollDialog(rollName, baseDefault, skillDefault, gearDefault, artifactDefault, modifierDefault, damage, diceRoller, onAfterRoll) {
+    static prepareRollDialog(rollName, baseDefault, skillDefault, gearDefault, modifierDefault, damage, diceRoller, onAfterRoll) {
         if (!diceRoller) {
           throw new Error('DiceRoller object must be passed to prepareRollDialog()');
         }
@@ -24,15 +23,14 @@ export class RollDialog {
         if (typeof baseDefault !== 'object') baseDefault = { name: "Base", value: baseDefault };
         if (typeof skillDefault !== 'object') skillDefault = { name: "Skill", value: skillDefault };
 
-        let baseHtml = this.buildInputHtmlDialog(baseDefault.name, baseDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), baseDefault.value);
-        let skillHtml = this.buildInputHtmlDialog(skillDefault.name, skillDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), skillDefault.value);
+        let baseHtml = this.buildDisableInpuHtmlDialog(baseDefault.name, baseDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), baseDefault.value);
+        let skillHtml = this.buildDisableInpuHtmlDialog(skillDefault.name, skillDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), skillDefault.value);
         let gearHtml = this.buildInputHtmlDialog("Gear", "gear", gearDefault);
-        let artifactHtml = this.buildInputHtmlDialog("Artifacts", "artifacts", artifactDefault);
         let modifierHtml = this.buildInputHtmlDialog("Modifier", "modifier", modifierDefault);
 
         let d = new Dialog({
             title: "Roll : " + rollName,
-            content: this.buildDivHtmlDialog(baseHtml + skillHtml + gearHtml + artifactHtml + modifierHtml),
+            content: this.buildDivHtmlDialog(baseHtml + skillHtml + gearHtml + modifierHtml),
             buttons: {
                 roll: {
                     icon: '<i class="fas fa-check"></i>',
@@ -41,14 +39,12 @@ export class RollDialog {
                         let base = html.find('#' + baseDefault.name.toLowerCase())[0].value;
                         let skill = html.find('#' + skillDefault.name.toLowerCase())[0].value;
                         let gear = html.find('#gear')[0].value;
-                        let artifact = this.parseArtifact(html.find('#artifacts')[0].value);
                         let modifier = html.find('#modifier')[0].value;
                         diceRoller.roll(
                             rollName,
                             parseInt(base, 10),
                             parseInt(skill, 10),
                             parseInt(gear, 10), 
-                            artifact,
                             parseInt(modifier, 10),
                             parseInt(damage, 10)
                         );
@@ -120,17 +116,11 @@ export class RollDialog {
     }
 
     /**
-     * Parse artifact dice string
-     * 
-     * @param  {string} artifact
+     * @param  {string} diceName
+     * @param  {string} diceId
+     * @param  {number} diceValue
      */
-    static parseArtifact(artifact) {
-        let regex = /([0-9]*)d([0-9]*)/g;
-        let regexMatch;
-        let artifacts = [];
-        while (regexMatch = regex.exec(artifact)) {
-            artifacts.push({dice: +regexMatch[1] || 1, face: +regexMatch[2]});
-        }
-        return artifacts;
-    }
+    static buildDisableInpuHtmlDialog(diceName, diceId, diceValue) {
+      return "<b>" + diceName + "</b><input id='" + diceId  + "' style='text-align: center' type='text' value='" + diceValue + "'disabled/>";
+  }
 }

@@ -32,7 +32,24 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
     const data = super.getData();
     this.computeSkills(data);
     this.computeItems(data);
+    this.capValues(data);
     return data;
+  }
+
+  capValues(data) {
+    // Cap attribute scores
+    for (let attribute of Object.values(data.data.attribute)) {
+      if (attribute.max > 5) { attribute.max = 5; }
+      if (attribute.max < 2) { attribute.max = 2; }
+      if (attribute.value > attribute.max) { attribute.value = attribute.max; }
+      if (attribute.value < 0) { attribute.value = 0; }
+    }
+
+    //Cap Skill scores
+    for (let skill of Object.values(data.data.skill)) {
+      if (skill.value > skill.max) { skill.value = skill.max; }
+      if (skill.value < skill.min) { skill.value = skill.min; }
+    }
   }
 
   activateListeners(html) {
@@ -73,7 +90,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         base = 0;
         skill = 0;
       }
-      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, 0, 0, this.diceRoller);
     });
     html.find(".roll-armor.total").click((ev) => {
       let armorTotal = 0;
@@ -84,7 +101,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         }
       });
       let testName = game.i18n.localize("HEADER.ARMOR").toUpperCase();
-      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, 0, this.diceRoller);
     });
     html.find(".roll-consumable").click((ev) => {
       const consumableName = $(ev.currentTarget).data("consumable");
@@ -133,7 +150,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
           label: "Roll",
           class: "custom-roll",
           icon: "fas fa-dice",
-          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, "", 0, 0, this.diceRoller),
+          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, 0, 0, this.diceRoller),
         },
         {
           label: "Push",

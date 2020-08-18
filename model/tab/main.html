@@ -10,10 +10,7 @@
             </div>
     
             <div class="value">
-                <!--
-                <input name="data.attribute.{{key}}.value" type="number" value="{{attribute.value}}" data-dtype="Number" />
-                / -->
-                <input name="data.attribute.{{key}}.max" type="number" value="{{attribute.max}}" data-dtype="Number" />
+                <input name="data.attribute.{{key}}.max" type="number" value="{{attribute.max}}" data-dtype="Number"/>
             </div>
             
             <div class="skulls {{#unless attribute.value }}broken{{/unless}} center align-center">
@@ -37,10 +34,12 @@
                     <div class="name"><button class="roll-skill" data-skill="{{key}}">{{localize skill.label}}</button></div>
                     <input name="data.skill.{{key}}.value" type="number" value="{{skill.value}}" min="{{skill.min}}"
                         data-dtype="Number" />
+
                 {{else}} {{#if skill.hasRequiredClass}}
-                        <div class="name"><button class="roll-skill" data-skill="{{key}}">{{localize skill.label}}</button></div>
-                        <input name="data.skill.{{key}}.value" type="number" value="{{skill.value}}" min="{{skill.min}}"
-                            data-dtype="Number" />
+                    <div class="name"><button class="roll-skill" data-skill="{{key}}">{{localize skill.label}}</button></div>
+                    <input name="data.skill.{{key}}.value" type="number" value="{{skill.value}}" min="{{skill.min}}"
+                        data-dtype="Number" />
+                        
                 {{/if}}
                 {{/if}}
             {{/if}}

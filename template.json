@@ -6,27 +6,23 @@
         "attribute": {
           "strength": {
             "label": "ATTRIBUTE.STRENGTH",
-            "value": 0,
-            "min": 0,
-            "max": 0
+            "value": 2,
+            "max": 2
           },
           "agility": {
             "label": "ATTRIBUTE.AGILITY",
-            "value": 0,
-            "min": 0,
-            "max": 0
+            "value": 2,
+            "max": 2
           },
           "wits": {
             "label": "ATTRIBUTE.WITS",
-            "value": 0,
-            "min": 0,
-            "max": 0
+            "value": 2,
+            "max": 2
           },
           "empathy": {
             "label": "ATTRIBUTE.EMPATHY",
-            "value": 0,
-            "min": 0,
-            "max": 0
+            "value": 2,
+            "max": 2
           }
         }
       },
@@ -37,6 +33,7 @@
             "label": "SKILL.ENDURANCE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "strength"
           },
@@ -44,6 +41,7 @@
             "label": "SKILL.FORCE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "strength"
           },
@@ -51,6 +49,7 @@
             "label": "SKILL.FIGHT",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "strength"
           },
@@ -58,6 +57,7 @@
             "label": "SKILL.INTIMIDATE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "enforcer",
             "attribute": "strength"
           },
@@ -65,6 +65,7 @@
             "label": "SKILL.SHAKE_IT_OFF",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "slave",
             "attribute": "strength"
           },
@@ -73,6 +74,7 @@
             "label": "SKILL.SNEAK",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "agility"
           },
@@ -80,6 +82,7 @@
             "label": "SKILL.MOVE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "agility"
           },
@@ -87,6 +90,7 @@
             "label": "SKILL.SHOOT",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "agility"
           },
@@ -94,6 +98,7 @@
             "label": "SKILL.FIND_THE_PATH",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "stalker",
             "attribute": "agility"
           },
@@ -101,6 +106,7 @@
             "label": "SKILL.SIC_A_DOG",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "dog-handler",
             "attribute": "agility"
           },
@@ -109,6 +115,7 @@
             "label": "SKILL.SCOUT",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "wits"
           },
@@ -116,6 +123,7 @@
             "label": "SKILL.COMPREHEND",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "wits"
           },
@@ -123,6 +131,7 @@
             "label": "SKILL.KNOW_THE_ZONE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "wits"
           },
@@ -130,6 +139,7 @@
             "label": "SKILL.JURY_RIG",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "gearhead",
             "attribute": "wits"
           },
@@ -137,6 +147,7 @@
             "label": "SKILL.COMMAND",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "boss",
             "attribute": "wits"
           },
@@ -145,6 +156,7 @@
             "label": "SKILL.SENSE_EMOTION",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "empathy"
           },
@@ -152,6 +164,7 @@
             "label": "SKILL.MANIPULATION",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "empathy"
           },
@@ -159,6 +172,7 @@
             "label": "SKILL.HEAL",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "none",
             "attribute": "empathy"
           },
@@ -166,6 +180,7 @@
             "label": "SKILL.MAKE_A_DEAL",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "fixer",
             "attribute": "empathy"
           },
@@ -173,6 +188,7 @@
             "label": "SKILL.INSPIRE",
             "value": 0,
             "min": 0,
+            "max": 5,
             "requiresClass": "chronicler",
             "attribute": "empathy"
           }

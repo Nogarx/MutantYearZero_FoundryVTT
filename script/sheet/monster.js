@@ -35,13 +35,13 @@ export class MutantYearZeroMonsterSheet extends MutantYearZeroActorSheet {
     html.find(".roll-armor").click((ev) => {
       let armorValue = this.actor.data.data.armor.value;
       let testName = game.i18n.localize("HEADER.ARMOR").toUpperCase();
-      RollDialog.prepareRollDialog(testName, 0, 0, armorValue, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, 0, 0, armorValue, 0, 0, this.diceRoller);
     });
     html.find(".roll-attack").click((ev) => {
       const itemId = $(ev.currentTarget).data("itemId");
       const weapon = this.actor.getOwnedItem(itemId);
       let testName = weapon.name;
-      RollDialog.prepareRollDialog(testName, weapon.data.data.dice, 0, 0, "", 0, weapon.data.data.damage, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, weapon.data.data.dice, 0, 0, 0, weapon.data.data.damage, this.diceRoller);
     });
   }
 
@@ -83,7 +83,7 @@ export class MutantYearZeroMonsterSheet extends MutantYearZeroActorSheet {
           label: "Roll",
           class: "custom-roll",
           icon: "fas fa-dice",
-          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, "", 0, 0, this.diceRoller),
+          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, 0, 0, this.diceRoller),
         },
       ].concat(buttons);
     }
