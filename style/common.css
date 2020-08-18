@@ -307,8 +307,9 @@
 }
 
 .mutant-year-zero.sheet .window-content {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background-image:url(../asset/sheet-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .mutant-year-zero.sheet .window-content form {
@@ -441,8 +442,9 @@ button,
 #chat-controls div.roll-type-select select,
 .window-app .window-content,
 .sidebar-tab .directory-header .header-search input {
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background-image:url(../asset/sheet-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 #navigation #scene-list .scene.gm {
   background: #525252;

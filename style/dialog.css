@@ -1,14 +1,19 @@
 .roll-dialog {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*
+    background-image:url(../asset/sheet-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
 }
 
 .roll-dialog b {
-    flex-basis: 25%;
-    margin: 5px;
+    text-align: center;
+    flex-basis: 50%;
+    margin: 10px 5px;
 }
 
 .roll-dialog input {
-    flex-basis: 5em;
-    margin: 5px;
+    align-items: center;
+    flex-basis: 25%;
+    margin: 10px 5px;
 }

@@ -90,7 +90,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         base = 0;
         skill = 0;
       }
-      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, 0, 0, this.diceRoller);
     });
     html.find(".roll-armor.total").click((ev) => {
       let armorTotal = 0;
@@ -101,7 +101,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         }
       });
       let testName = game.i18n.localize("HEADER.ARMOR").toUpperCase();
-      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, 0, this.diceRoller);
     });
     html.find(".roll-consumable").click((ev) => {
       const consumableName = $(ev.currentTarget).data("consumable");
@@ -150,7 +150,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
           label: "Roll",
           class: "custom-roll",
           icon: "fas fa-dice",
-          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, "", 0, 0, this.diceRoller),
+          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, 0, 0, this.diceRoller),
         },
         {
           label: "Push",

@@ -58,7 +58,7 @@ export class MutantYearZeroActorSheet extends ActorSheet {
       const attribute = this.actor.data.data.attribute[attributeName];
       const localizedName = game.i18n.localize(attribute.label);
       let testName = localizedName.toUpperCase();
-      RollDialog.prepareRollDialog(testName, {name: localizedName, value: attribute.value}, 0, 0, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, {name: localizedName, value: attribute.value}, 0, 0, 0, 0, this.diceRoller);
     });
     html.find(".roll-skill").click((ev) => {
       const skillName = $(ev.currentTarget).data("skill");
@@ -71,7 +71,7 @@ export class MutantYearZeroActorSheet extends ActorSheet {
         testName, 
         {name: localizedAttrName, value: attribute.value}, 
         {name: localizedSkillName, value: skill.value}, 
-        0, "", 0, 0, this.diceRoller
+        0, 0, 0, this.diceRoller
       );
     });
     html.find(".roll-weapon").click((ev) => {
@@ -93,7 +93,6 @@ export class MutantYearZeroActorSheet extends ActorSheet {
         {name: game.i18n.localize(attribute.label), value: attribute.value}, 
         {name: game.i18n.localize(skill.label), value: skill.value}, 
         bonus, 
-        weapon.data.data.artifactBonus || "", 
         weapon.data.data.skillBonus, 
         weapon.data.data.damage, 
         this.diceRoller
