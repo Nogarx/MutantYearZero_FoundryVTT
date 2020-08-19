@@ -7,26 +7,22 @@
           "strength": {
             "label": "ATTRIBUTE.STRENGTH",
             "value": 0,
-            "min": 0,
-            "max": 0
+            "max": 27
           },
           "agility": {
             "label": "ATTRIBUTE.AGILITY",
             "value": 0,
-            "min": 0,
-            "max": 0
+            "max": 27
           },
           "wits": {
             "label": "ATTRIBUTE.WITS",
             "value": 0,
-            "min": 0,
-            "max": 0
+            "max": 27
           },
           "empathy": {
             "label": "ATTRIBUTE.EMPATHY",
             "value": 0,
-            "min": 0,
-            "max": 0
+            "max": 27
           }
         }
       },
@@ -37,18 +33,40 @@
             "label": "SKILL.ENDURANCE",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "strength"
           },
           "force": {
             "label": "SKILL.FORCE",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "strength"
           },
           "fight": {
             "label": "SKILL.FIGHT",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
+            "attribute": "strength"
+          },
+          "intimidate": {
+            "label": "SKILL.INTIMIDATE",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "enforcer",
+            "attribute": "strength"
+          },
+          "shake-it-off": {
+            "label": "SKILL.SHAKE_IT_OFF",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "slave",
             "attribute": "strength"
           },
 
@@ -56,18 +74,40 @@
             "label": "SKILL.SNEAK",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "agility"
           },
           "move": {
             "label": "SKILL.MOVE",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "agility"
           },
           "shoot": {
             "label": "SKILL.SHOOT",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
+            "attribute": "agility"
+          },
+          "find-the-path": {
+            "label": "SKILL.FIND_THE_PATH",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "stalker",
+            "attribute": "agility"
+          },
+          "sic-a-dog": {
+            "label": "SKILL.SIC_A_DOG",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "dog-handler",
             "attribute": "agility"
           },
 
@@ -75,37 +115,81 @@
             "label": "SKILL.SCOUT",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "wits"
           },
           "comprehend": {
             "label": "SKILL.COMPREHEND",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "wits"
           },
-          "know the zone": {
+          "know-the-zone": {
             "label": "SKILL.KNOW_THE_ZONE",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
+            "attribute": "wits"
+          },
+          "jury-rig": {
+            "label": "SKILL.JURY_RIG",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "gearhead",
+            "attribute": "wits"
+          },
+          "command": {
+            "label": "SKILL.COMMAND",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "boss",
             "attribute": "wits"
           },
 
-          "sense emotion": {
+          "sense-emotion": {
             "label": "SKILL.SENSE_EMOTION",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "empathy"
           },
           "manipulation": {
             "label": "SKILL.MANIPULATION",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
             "attribute": "empathy"
           },
           "heal": {
             "label": "SKILL.HEAL",
             "value": 0,
             "min": 0,
+            "max": 5,
+            "requiresClass": "none",
+            "attribute": "empathy"
+          },
+          "make-a-deal": {
+            "label": "SKILL.MAKE_A_DEAL",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "fixer",
+            "attribute": "empathy"
+          },
+          "inspire": {
+            "label": "SKILL.INSPIRE",
+            "value": 0,
+            "min": 0,
+            "max": 5,
+            "requiresClass": "chronicler",
             "attribute": "empathy"
           }
 
@@ -115,28 +199,28 @@
     "character": {
       "templates": ["attributes", "skills"],
       "bio": {
-        "kin": {
-          "label": "BIO.KIN",
-          "value": ""
-        },
         "role": {
           "label": "BIO.ROLE",
           "value": ""
         },
-        "pride": {
-          "label": "BIO.PRIDE",
+        "den": {
+          "label": "BIO.DEN",
           "value": ""
         },
-        "darkSecret": {
-          "label": "BIO.DARK_SECRET",
+        "i-hate": {
+          "label": "BIO.I_HATE",
+          "value": ""
+        },
+        "i-protect": {
+          "label": "BIO.I_PROTECT",
+          "value": ""
+        },
+        "big-dream": {
+          "label": "BIO.BIG_DREAM",
           "value": ""
         },
         "age": {
           "label": "BIO.AGE",
-          "value": 0
-        },
-        "reputation": {
-          "label": "BIO.REPUTATION",
           "value": 0
         },
         "face": {
@@ -157,10 +241,18 @@
         },
         "experience": {
           "label": "BIO.EXPERIENCE",
-          "value": 0
+          "value": 0,
+          "min": 0,
+          "max": 10
         },
-        "willpower": {
-          "label": "BIO.WILLPOWER",
+        "mutation-points": {
+          "label": "BIO.MUTATION_POINTS",
+          "value": 0,
+          "min": 0,
+          "max": 10
+        },
+        "rot-points": {
+          "label": "BIO.ROT_POINTS",
           "value": 0,
           "min": 0,
           "max": 10
@@ -171,7 +263,7 @@
           "label": "CONDITION.SLEEPLESS",
           "value": false
         },
-        "dehytrated": {
+        "dehydrated": {
           "label": "CONDITION.DEHYDRATED",
           "value": false
         },
@@ -195,24 +287,6 @@
         },
         "bullets": {
           "label": "CONSUMABLE.BULLETS",
-          "value": 0
-        },
-        "torches": {
-          "label": "CONSUMABLE.TORCHES",
-          "value": 0
-        }
-      },
-      "currency": {
-        "gold": {
-          "label": "CURRENCY.GOLD",
-          "value": 0
-        },
-        "silver": {
-          "label": "CURRENCY.SILVER",
-          "value": 0
-        },
-        "copper": {
-          "label": "CURRENCY.COPPER",
           "value": 0
         }
       }
@@ -242,7 +316,7 @@
       "rawMaterial",
       "talent",
       "criticalInjury",
-      "spell",
+      "mutation",
       "monsterTalent",
       "monsterAttack",
       "building",
@@ -287,7 +361,7 @@
       "supply": "",
       "weight": "regular"
     },
-    "spell": {
+    "mutation": {
       "rank": 1,
       "range": "",
       "duration": "",
@@ -331,7 +405,6 @@
       "tools": "",
       "time": "",
       "effect": "",
-      "reputation": "",
       "number": 0
     },
     "hireling": {

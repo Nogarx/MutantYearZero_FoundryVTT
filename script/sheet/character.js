@@ -14,7 +14,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         ".armors .item-list .items",
         ".critical-injuries .item-list .items",
         ".gears.item-list .items",
-        ".spells .item-list .items",
+        ".mutations .item-list .items",
         ".talents .item-list .items",
         ".weapons .item-list .items",
       ],
@@ -32,7 +32,24 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
     const data = super.getData();
     this.computeSkills(data);
     this.computeItems(data);
+    this.capValues(data);
     return data;
+  }
+
+  capValues(data) {
+    // Cap attribute scores
+    for (let attribute of Object.values(data.data.attribute)) {
+      if (attribute.max > 5) { attribute.max = 5; }
+      if (attribute.max < 2) { attribute.max = 2; }
+      if (attribute.value > attribute.max) { attribute.value = attribute.max; }
+      if (attribute.value < 0) { attribute.value = 0; }
+    }
+
+    //Cap Skill scores
+    for (let skill of Object.values(data.data.skill)) {
+      if (skill.value > skill.max) { skill.value = skill.max; }
+      if (skill.value < skill.min) { skill.value = skill.min; }
+    }
   }
 
   activateListeners(html) {
@@ -43,13 +60,13 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
     html.find(".condition").click(async (ev) => {
       const conditionName = $(ev.currentTarget).data("condition");
       const conditionValue = this.actor.data.data.condition[conditionName].value;
-      if (conditionName === "sleepy") {
+      if (conditionName === "sleepless") {
         this.actor.update({"data.condition.sleepless.value": !conditionValue,});
-      } else if (conditionName === "thirsty") {
+      } else if (conditionName === "dehydrated") {
         this.actor.update({ "data.condition.dehydrated.value": !conditionValue });
-      } else if (conditionName === "hungry") {
+      } else if (conditionName === "starving") {
         this.actor.update({ "data.condition.starving.value": !conditionValue });
-      } else if (conditionName === "cold") {
+      } else if (conditionName === "hypothermic") {
         this.actor.update({ "data.condition.hypothermic.value": !conditionValue });
       }
       this._render();
@@ -73,7 +90,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         base = 0;
         skill = 0;
       }
-      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, base, skill, armor.data.data.bonus.value, 0, 0, this.diceRoller);
     });
     html.find(".roll-armor.total").click((ev) => {
       let armorTotal = 0;
@@ -84,7 +101,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
         }
       });
       let testName = game.i18n.localize("HEADER.ARMOR").toUpperCase();
-      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, "", 0, 0, this.diceRoller);
+      RollDialog.prepareRollDialog(testName, 0, 0, armorTotal, 0, this.diceRoller);
     });
     html.find(".roll-consumable").click((ev) => {
       const consumableName = $(ev.currentTarget).data("consumable");
@@ -99,6 +116,8 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       skill.hasAgility = skill.attribute === "agility";
       skill.hasWits = skill.attribute === "wits";
       skill.hasEmpathy = skill.attribute === "empathy";
+      skill.isCommonSkill = skill.requiresClass === "none";
+      skill.hasRequiredClass = skill.requiresClass === this.actor.data.data.bio.role.value;
     }
   }
 
@@ -109,7 +128,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       item.isArmor = item.type === "armor";
       item.isGear = item.type === "gear";
       item.isRawMaterial = item.type === "rawMaterial";
-      item.isSpell = item.type === "spell";
+      item.isMutation = item.type === "mutation";
       item.isCriticalInjury = item.type === "criticalInjury";
     }
   }
@@ -131,7 +150,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
           label: "Roll",
           class: "custom-roll",
           icon: "fas fa-dice",
-          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, "", 0, 0, this.diceRoller),
+          onclick: (ev) => RollDialog.prepareRollDialog("Roll", 0, 0, 0, 0, 0, this.diceRoller),
         },
         {
           label: "Push",

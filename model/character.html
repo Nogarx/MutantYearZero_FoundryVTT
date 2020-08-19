@@ -6,40 +6,48 @@
                     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
                 </div>
                 <div class="flex column grow">
-                    <div class="name bio-row">
-                        <label>{{localize "BIO.NAME"}}:</label>
-                        <input name="name" type="text" value="{{actor.name}}" />
-                    </div>
                     <div class="bio-row">
-                        <div class="kin">
-                            <label>{{localize data.bio.kin.label}}:</label>
-                            <input name="data.bio.kin.value" type="text" value="{{data.bio.kin.value}}" />
+                        <div class="name">
+                            <label>{{localize "BIO.NAME"}}:</label>
+                            <input name="name" type="text" value="{{actor.name}}" />
                         </div>
-                        <div class="role">
-                            <label>{{localize data.bio.role.label}}:</label>
-                            <input name="data.bio.role.value" type="text" value="{{data.bio.role.value}}" />
-                        </div>
-                    </div>
-                    <div class="bio-row">
                         <div class="age">
-                            <label>{{localize data.bio.age.label}}:</label>
+                            <label>{{localize "BIO.AGE"}}:</label>
                             <input name="data.bio.age.value" type="number" value="{{data.bio.age.value}}"
                                 data-dtype="Number" />
                         </div>
-                        <div class="reputation">
-                            <label>{{localize data.bio.reputation.label}}:</label>
-                            <input name="data.bio.reputation.value" type="number" value="{{data.bio.reputation.value}}"
-                                data-dtype="Number" />
+                        <div class="role">
+                            <label>{{localize "BIO.ROLE"}}:</label>
+                            <select name="data.bio.role.value">
+                                {{#select data.bio.role.value}}
+                                <option hidden disabled selected value> {{localize "ROLE.SELECT"}} </option>
+                                <option value="enforcer">{{localize "ROLE.ENFORCER"}}</option>
+                                <option value="gearhead">{{localize "ROLE.GEARHEAD"}}</option>
+                                <option value="stalker">{{localize "ROLE.STALKER"}}</option>
+                                <option value="fixer">{{localize "ROLE.FIXER"}}</option>
+                                <option value="dog-handler">{{localize "ROLE.DOG_HANDLER"}}</option>
+                                <option value="chronicler">{{localize "ROLE.CHRONICLER"}}</option>
+                                <option value="boss">{{localize "ROLE.BOSS"}}</option>
+                                <option value="slave">{{localize "ROLE.SLAVE"}}</option>                          
+                                {{/select}}
+                            </select>
                         </div>
-                        <div class="willpower">
-                            <label>{{localize data.bio.willpower.label}}:</label>
-                            <input name="data.bio.willpower.value" type="number" value="{{data.bio.willpower.value}}"
-                                min="{{data.bio.willpower.min}}" max="{{data.bio.willpower.max}}" data-dtype="Number" />
-                        </div>
+                    </div>
+                    <div class="bio-row">
                         <div class="experience">
                             <label>{{localize data.bio.experience.label}}:</label>
                             <input name="data.bio.experience.value" type="number" value="{{data.bio.experience.value}}"
                                 data-dtype="Number" />
+                        </div>
+                        <div class="mutation-points">
+                            <label>{{localize data.bio.mutation-points.label}}:</label>
+                            <input name="data.bio.mutation-points.value" type="number" value="{{data.bio.mutation-points.value}}"
+                                min="{{data.bio.mutation-points.min}}" max="{{data.bio.mutation-points.max}}" data-dtype="Number" />
+                        </div>
+                        <div class="rot-points">
+                            <label>{{localize data.bio.rot-points.label}}:</label>
+                            <input name="data.bio.rot-points.value" type="number" value="{{data.bio.rot-points.value}}"
+                                min="{{data.bio.rot-points.min}}" max="{{data.bio.rot-points.max}}" data-dtype="Number" />
                         </div>
                     </div>
                 </div>

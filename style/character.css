@@ -14,11 +14,10 @@
 }
 
 .mutant-year-zero .character .bio .bio-row {
-  align-items: baseline;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5px 0;
+  margin: 10px;
 }
 
 .mutant-year-zero .character .bio .avatar {
@@ -43,33 +42,30 @@
   margin: auto;
 }
 .mutant-year-zero .character .bio .avatar img:hover {
-  box-shadow: 0 0 10px red;
+  box-shadow: 0 0 10px blue;
   cursor: pointer;
 }
 
-.mutant-year-zero .character .bio .name {
-  display: flex;
-  flex-direction: row;
-}
-
-.mutant-year-zero .character .bio .kin input {
+.mutant-year-zero .character .bio .name input {
   width: 10em;
 }
 
-.mutant-year-zero .character .bio .role input {
-  width: 14em;
+.mutant-year-zero .character .bio .role select {
+  display: inline-block;
+  width: 10em;
+  margin: 0px 8px;
 }
 
 .mutant-year-zero .character .bio .age input {
-  width: 4em;
+  width: 3em;
 }
 
-.mutant-year-zero .character .bio .reputation input {
-  width: 2em;
+.mutant-year-zero .character .bio .rot-points input {
+  width: 3em;
 }
 
-.mutant-year-zero .character .bio .willpower input {
-  width: 2em;
+.mutant-year-zero .character .bio .mutation-points input {
+  width: 3em;
 }
 
 .mutant-year-zero .character .bio .experience input {

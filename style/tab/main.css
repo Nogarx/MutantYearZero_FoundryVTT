@@ -1,31 +1,58 @@
 .mutant-year-zero .main-tab {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.mutant-year-zero .attributes {
-  align-items: baseline;
+.mutant-year-zero .skills-tab {
   display: grid;
-  gap: 4px 8px;
-  grid-template-columns: auto 1fr auto;
-  padding: 0 8px 8px;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  height: 70%;
+  box-sizing: border-box;
+}
+
+.mutant-year-zero .attributes {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .mutant-year-zero .attributes h1 {
-  grid-column: 1/-1;
+  text-align: center;
 }
 
-.mutant-year-zero .attributes .name {
+.mutant-year-zero .attributes .box {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.mutant-year-zero .attributes .box .name {
   font-family: var(--font-special);
+  font-size: large;
+  margin: auto;
+  padding-bottom: 5px;
 }
 
-.mutant-year-zero .attributes .value {
+.mutant-year-zero .attributes .box .value {
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.mutant-year-zero .attributes .box .value input {
   font-family: var(--font-special);
+  font-size: xx-large;
+  height: 35px;
 }
 
-.mutant-year-zero .attributes .value input {
+.mutant-year-zero .attributes .box .value input {
   width: 2em;
 }
 
@@ -33,8 +60,22 @@
   color: #a00;
 }
 
+.mutant-year-zero .conditions {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.mutant-year-zero .conditions h1 {
+  text-align: center;
+}
+
 .mutant-year-zero .conditions a.condition {
-  flex-basis: 50%;
+  display: inline-block;
+  cursor: pointer;
+  flex-basis: 25%;
   font-family: var(--font-special);
   font-weight: bold;
 }

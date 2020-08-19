@@ -1,17 +1,24 @@
 .mutant-year-zero .character .bio-tab {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  gap: 8px;
-  grid-template-rows: auto auto auto auto auto;
-  padding: 0 8px 8px;
+  padding: 10px 10px;
 }
 
 .mutant-year-zero .character .bio-tab .section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin: 10px 0px;
+  align-content: center;
+}
+
+.mutant-year-zero .character .bio-tab h1 {
+  width: 8em;
+  align-self: center;
 }
 
 .mutant-year-zero .character .bio-tab textarea {
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   resize: none;
+  width: 75%;
 }

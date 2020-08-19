@@ -1,17 +1,20 @@
 <div class="gear-tab">
-    <div class="currencies border">
-        <div class="header flex grow row">
-            <b>{{localize "HEADER.CURRENCY"}}</b>
-            <div class="values">
-                <label>{{localize data.currency.gold.label}}:</label>
-                <input name="data.currency.gold.value" type="number" value="{{data.currency.gold.value}}" />
-                <label>{{localize data.currency.silver.label}}:</label>
-                <input name="data.currency.silver.value" type="number" value="{{data.currency.silver.value}}" />
-                <label>{{localize data.currency.copper.label}}:</label>
-                <input name="data.currency.copper.value" type="number" value="{{data.currency.copper.value}}" />
-            </div>
+
+    <div class="consumables border">
+        <div class="consumable">    
+            <label>{{localize "CONSUMABLE.GRUB"}}</label>
+            <input name="data.consumable.grub.value" type="number"  value="{{data.consumable.grub.value}}" data-dtype="Number" />
+        </div>
+        <div class="consumable">    
+            <label>{{localize "CONSUMABLE.WATER"}}</label> 
+            <input name="data.consumable.water.value" type="number"  value="{{data.consumable.water.value}}" data-dtype="Number" />
+        </div>
+        <div class="consumable">    
+            <label>{{localize "CONSUMABLE.BULLETS"}}</label> 
+            <input name="data.consumable.bullets.value" type="number"  value="{{data.consumable.bullets.value}}" data-dtype="Number" />
         </div>
     </div>
+
     <div class="gears item-list border">
         <h1>{{localize "HEADER.GEAR"}}</h1>
         <div class="items">
@@ -135,20 +138,5 @@
             </div>
         </div>
     </div>
-    <div class="consumables border">
-        {{#each actor.data.consumable as |consumable key|}}
-        <div class="consumable">
-            <button class="roll-consumable" data-consumable="{{key}}">{{localize consumable.label}}</button>
-            <select name="data.consumable.{{key}}.value" data-dtype="Number">
-                {{#select consumable.value}}
-                <option value="0">—</option>
-                <option value="6">D6</option>
-                <option value="8">D8</option>
-                <option value="10">D10</option>
-                <option value="12">D12</option>
-                {{/select}}
-            </select>
-        </div>
-        {{/each}}
-    </div>
+
 </div>
