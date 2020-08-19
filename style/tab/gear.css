@@ -1,29 +1,41 @@
 .mutant-year-zero .gear-tab {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
-  grid-template-rows: auto 1fr auto;
   height: 100%;
 }
 
 .mutant-year-zero .character .consumables {
-  display: grid;
-  gap: 8px;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .mutant-year-zero .character .consumables .consumable {
-  align-items: center;
   font-family: var(--font-special);
-  padding: 8px 0;
-  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 2em;
 }
 
-.mutant-year-zero .character .consumables .consumable select {
-  width: auto;
+.mutant-year-zero .character .consumables .consumable label {
+  width: 8em;
+  margin: 0px 5px;
+}
+
+.mutant-year-zero .character .consumables .consumable input {
+  width: 4em;
 }
 
 .mutant-year-zero .character .gears {
   padding-bottom: 8px;
+  height: 90%;
 }
 
 .mutant-year-zero .character .gears .items .header {

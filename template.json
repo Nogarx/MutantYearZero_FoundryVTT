@@ -6,23 +6,23 @@
         "attribute": {
           "strength": {
             "label": "ATTRIBUTE.STRENGTH",
-            "value": 2,
-            "max": 2
+            "value": 0,
+            "max": 27
           },
           "agility": {
             "label": "ATTRIBUTE.AGILITY",
-            "value": 2,
-            "max": 2
+            "value": 0,
+            "max": 27
           },
           "wits": {
             "label": "ATTRIBUTE.WITS",
-            "value": 2,
-            "max": 2
+            "value": 0,
+            "max": 27
           },
           "empathy": {
             "label": "ATTRIBUTE.EMPATHY",
-            "value": 2,
-            "max": 2
+            "value": 0,
+            "max": 27
           }
         }
       },
@@ -205,6 +205,14 @@
         },
         "den": {
           "label": "BIO.DEN",
+          "value": ""
+        },
+        "i-hate": {
+          "label": "BIO.I_HATE",
+          "value": ""
+        },
+        "i-protect": {
+          "label": "BIO.I_PROTECT",
           "value": ""
         },
         "big-dream": {
