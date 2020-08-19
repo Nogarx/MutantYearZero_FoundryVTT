@@ -1,10 +1,10 @@
 import { MutantYearZeroActorSheet } from "./actor.js";
 
-export class MutantYearZeroStrongholdSheet extends MutantYearZeroActorSheet {
+export class MutantYearZeroSettlementSheet extends MutantYearZeroActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["mutant-year-zero", "sheet", "actor"],
-      template: "systems/mutant-year-zero/model/stronghold.html",
+      template: "systems/mutant-year-zero/model/settlement.html",
       width: 600,
       height: 700,
       resizable: false,
@@ -39,7 +39,7 @@ export class MutantYearZeroStrongholdSheet extends MutantYearZeroActorSheet {
       item.isGear = item.type === "gear";
       item.isRawMaterial = item.type === "rawMaterial";
       item.isBuilding = item.type === "building";
-      item.isHireling = item.type === "hireling";
+      item.isHireling = item.type === "vip";
     }
   }
 

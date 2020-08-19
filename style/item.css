@@ -115,11 +115,11 @@
   height: 250px;
 }
 
-.mutant-year-zero.item .item .hireling-description {
+.mutant-year-zero.item .item .vip-description {
   grid-column: 1/-1;
 }
 
-.mutant-year-zero.item .item .hireling-description textarea {
+.mutant-year-zero.item .item .vip-description textarea {
   resize: none;
   height: 215px;
 }

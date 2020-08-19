@@ -75,7 +75,7 @@
   "HEADER.CLOTHING": "CLOTHING",
   "HEADER.ATTACK": "ATTACKS",
   "HEADER.BUILDING": "BUILDINGS",
-  "HEADER.HIRELING": "HIRELINGS",
+  "HEADER.VIP": "HIRELINGS",
   "HEADER.RAW_MATERIAL": "RAW MATERIALS",
 
   "ARMOR.HELMET": "Helmet",
@@ -96,7 +96,7 @@
   "TAB.BIO": "BIO",
   "TAB.NOTE": "NOTE",
   "TAB.BUILDING": "BUILDING",
-  "TAB.HIRELING": "HIRELING",
+  "TAB.VIP": "VIP",
 
   "WEAPON.NAME": "Name",
   "WEAPON.CATEGORY": "Category",
@@ -119,7 +119,7 @@
   "ITEM.BUILDING": "Building",
   "ITEM.CRITICAL_INJURY": "Critical Injury",
   "ITEM.GEAR": "Gear",
-  "ITEM.HIRELING": "Hireling",
+  "ITEM.VIP": "Vip",
   "ITEM.RAW_MATERIAL": "Raw Material",
   "ITEM.MUTATION": "Mutation",
   "ITEM.TALENT": "Talent",
@@ -174,8 +174,8 @@
   "MONSTER.ARMOR": "Armor Rating",
   "MOVEMENT": "Movement",
 
-  "STRONGHOLD.LOCATION": "Location",
-  "STRONGHOLD.DEFENSE_RATING": "Defense Rating",
+  "SETTLEMENT.LOCATION": "Location",
+  "SETTLEMENT.DEFENSE_RATING": "Defense Rating",
 
   "BUILDING.NAME": "Name",
   "BUILDING.EFFECT": "Effect",
@@ -186,9 +186,9 @@
   "BUILDING.TOOLS": "Tools",
   "BUILDING.TIME": "Time",
 
-  "HIRELING.NAME": "Name",
-  "HIRELING.NUMBER": "Number",
-  "HIRELING.SALARY": "Salary",
-  "HIRELING.DESCRIPTION": "Description",
-  "HIRELING.SUPPLY": "Supply"
+  "VIP.NAME": "Name",
+  "VIP.NUMBER": "Number",
+  "VIP.SALARY": "Salary",
+  "VIP.DESCRIPTION": "Description",
+  "VIP.SUPPLY": "Supply"
 }

@@ -14,7 +14,7 @@
         <h4>{{localize "ITEM.GEAR"}}</h4>
         {{/if}}
         {{#if isHireling}}
-        <h4>{{localize "ITEM.HIRELING"}}</h4>
+        <h4>{{localize "ITEM.VIP"}}</h4>
         {{/if}}
         {{#if isMonsterAttack}}
         <h4>{{localize "ITEM.ATTACK"}}</h4>
@@ -33,6 +33,9 @@
         {{/if}}
         {{#if isWeapon}}
         <h4>{{weaponCategory data.category}}, {{weaponGrip data.grip}}</h4>
+        {{/if}}
+        {{#if isArtifact}}
+        <h4>{{localize "ITEM.ARTIFACT"}}</h4>
         {{/if}}
 
 
@@ -76,8 +79,8 @@
         {{/if}}
 
         {{#if isHireling}}
-        <p><strong>{{localize "HIRELING.SALARY"}}:</strong> {{data.salary}}</p>
-        <p><strong>{{localize "HIRELING.NUMBER"}}:</strong> {{data.number}}</p>
+        <p><strong>{{localize "VIP.SALARY"}}:</strong> {{data.salary}}</p>
+        <p><strong>{{localize "VIP.NUMBER"}}:</strong> {{data.number}}</p>
         {{#if data.description}}
         <p>{{data.description}}</p>
         {{/if}}

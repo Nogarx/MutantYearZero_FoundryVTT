@@ -22,9 +22,9 @@ function preloadHandlebarsTemplates() {
     "systems/mutant-year-zero/model/tab/gear.html",
     "systems/mutant-year-zero/model/tab/gear-monster.html",
     "systems/mutant-year-zero/model/tab/bio.html",
-    "systems/mutant-year-zero/model/tab/building-stronghold.html",
-    "systems/mutant-year-zero/model/tab/hireling-stronghold.html",
-    "systems/mutant-year-zero/model/tab/gear-stronghold.html",
+    "systems/mutant-year-zero/model/tab/building-settlement.html",
+    "systems/mutant-year-zero/model/tab/vip-settlement.html",
+    "systems/mutant-year-zero/model/tab/gear-settlement.html",
     "systems/mutant-year-zero/model/tab/artifact.html",
   ];
   return loadTemplates(templatePaths);

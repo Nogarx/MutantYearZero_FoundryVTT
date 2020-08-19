@@ -1,19 +1,19 @@
-.mutant-year-zero .stronghold {
+.mutant-year-zero .settlement {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
-.mutant-year-zero .stronghold .bio label {
+.mutant-year-zero .settlement .bio label {
   font-family: var(--font-special);
 }
-.mutant-year-zero .stronghold .bio input {
+.mutant-year-zero .settlement .bio input {
   flex-grow: 1;
   margin: 0 8px;
 }
 
-.mutant-year-zero .stronghold .bio .bio-row {
+.mutant-year-zero .settlement .bio .bio-row {
   align-items: baseline;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@
   margin: 5px 0;
 }
 
-.mutant-year-zero .stronghold .bio .avatar {
+.mutant-year-zero .settlement .bio .avatar {
   background: radial-gradient(
     closest-side,
     var(--color-highlight) 0%,
@@ -33,7 +33,7 @@
   width: 95px;
 }
 
-.mutant-year-zero .stronghold .bio .avatar img {
+.mutant-year-zero .settlement .bio .avatar img {
   border: 0 none;
   display: block;
   max-width: 95px;
@@ -42,20 +42,20 @@
   min-height: 20px;
   margin: auto;
 }
-.mutant-year-zero .stronghold .bio .avatar img:hover {
+.mutant-year-zero .settlement .bio .avatar img:hover {
   box-shadow: 0 0 10px red;
   cursor: pointer;
 }
 
-.mutant-year-zero .stronghold .bio .name {
+.mutant-year-zero .settlement .bio .name {
   display: flex;
   flex-direction: row;
 }
 
-.mutant-year-zero .stronghold .bio .location input {
+.mutant-year-zero .settlement .bio .location input {
   width: 15em;
 }
 
-.mutant-year-zero .stronghold .bio .defense-rating input {
+.mutant-year-zero .settlement .bio .defense-rating input {
   width: 2em;
 }

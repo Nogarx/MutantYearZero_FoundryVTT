@@ -2,7 +2,7 @@ export class MutantYearZeroHirelingSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["mutant-year-zero", "sheet", "item"],
-      template: "systems/mutant-year-zero/model/hireling.html",
+      template: "systems/mutant-year-zero/model/vip.html",
       width: 400,
       height: 400,
       resizable: false,

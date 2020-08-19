@@ -130,6 +130,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       item.isRawMaterial = item.type === "rawMaterial";
       item.isMutation = item.type === "mutation";
       item.isCriticalInjury = item.type === "criticalInjury";
+      item.isArtifact = item.type === "artifact";
     }
   }
 

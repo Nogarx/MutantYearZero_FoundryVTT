@@ -1,8 +1,8 @@
-.mutant-year-zero .stronghold .hirelings {
+.mutant-year-zero .settlement .hirelings {
   flex-basis: 50%;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling {
+.mutant-year-zero .settlement .hirelings .vip {
   align-items: center;
 }
 
@@ -13,25 +13,25 @@
   margin-left: 4px;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling .name {
+.mutant-year-zero .settlement .hirelings .vip .name {
   flex-basis: 55%;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling .name a {
+.mutant-year-zero .settlement .hirelings .vip .name a {
   font-weight: bold;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling .number {
+.mutant-year-zero .settlement .hirelings .vip .number {
   flex-basis: 15%;
   text-align: center;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling .salary {
+.mutant-year-zero .settlement .hirelings .vip .salary {
   flex-basis: 20%;
   text-align: right;
 }
 
-.mutant-year-zero .stronghold .hirelings .hireling .button {
+.mutant-year-zero .settlement .hirelings .vip .button {
   flex-basis: 10%;
   font-size: 10px;
   text-align: right;

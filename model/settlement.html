@@ -1,5 +1,5 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <div class="stronghold">
+    <div class="settlement">
         <div class="bio border">
             <div class="flex row align-center">
                 <div class="avatar">
@@ -12,11 +12,11 @@
                     </div>
                     <div class="bio-row">
                         <div class="location">
-                            <label>{{localize "STRONGHOLD.LOCATION"}}:</label>
+                            <label>{{localize "SETTLEMENT.LOCATION"}}:</label>
                             <input name="data.location" type="text" value="{{data.location}}" />
                         </div>
                         <div class="defense-rating">
-                            <label>{{localize "STRONGHOLD.DEFENSE_RATING"}}:</label>
+                            <label>{{localize "SETTLEMENT.DEFENSE_RATING"}}:</label>
                             <input name="data.defenseRating" type="number" value="{{data.defenseRating}}"
                                 data-dtype="Number" />
                         </div>
@@ -27,20 +27,20 @@
 
         <div class="sheet-tabs tabs flex row" data-group="primary">
             <b class="item" data-tab="building">{{localize "TAB.BUILDING"}}</b>
-            <b class="item" data-tab="hireling">{{localize "TAB.HIRELING"}}</b>
+            <b class="item" data-tab="vip">{{localize "TAB.VIP"}}</b>
             <b class="item" data-tab="gear">{{localize "TAB.GEAR"}}</b>
             <b class="item" data-tab="note">{{localize "TAB.NOTE"}}</b>
         </div>
 
         <div class="sheet-body">
             <div class="tab" data-group="primary" data-tab="building">
-                {{> systems/mutant-year-zero/model/tab/building-stronghold.html}}
+                {{> systems/mutant-year-zero/model/tab/building-settlement.html}}
             </div>
-            <div class="tab" data-group="primary" data-tab="hireling">
-                {{> systems/mutant-year-zero/model/tab/hireling-stronghold.html}}
+            <div class="tab" data-group="primary" data-tab="vip">
+                {{> systems/mutant-year-zero/model/tab/vip-settlement.html}}
             </div>
             <div class="tab" data-group="primary" data-tab="gear">
-                {{> systems/mutant-year-zero/model/tab/gear-stronghold.html}}
+                {{> systems/mutant-year-zero/model/tab/gear-settlement.html}}
             </div>
             <div class="tab note" data-group="primary" data-tab="note">
                 {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}

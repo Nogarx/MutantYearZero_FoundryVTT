@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "monster", "stronghold"],
+    "types": ["character", "monster", "settlement"],
     "templates": {
       "attributes": {
         "attribute": {
@@ -302,7 +302,7 @@
         "value": 0
       }
     },
-    "stronghold": {
+    "settlement": {
       "location": "",
       "description": "",
       "defenseRating": 0
@@ -310,6 +310,7 @@
   },
   "Item": {
     "types": [
+      "artifact",
       "weapon",
       "armor",
       "gear",
@@ -320,7 +321,7 @@
       "monsterTalent",
       "monsterAttack",
       "building",
-      "hireling"
+      "vip"
     ],
     "templates": {
       "bonus": {
@@ -335,6 +336,9 @@
         "talent": "",
         "tools": ""
       }
+    },
+    "artifact":{
+      "description": ""
     },
     "weapon": {
       "templates": ["bonus", "craftable"],
@@ -407,7 +411,7 @@
       "effect": "",
       "number": 0
     },
-    "hireling": {
+    "vip": {
       "description": "",
       "salary": "",
       "supply": "",

@@ -1,7 +1,7 @@
 import { MutantYearZeroActor, MutantYearZeroItem } from "./actor/mutant-year-zero.js";
 import { MutantYearZeroCharacterSheet } from "./sheet/character.js";
 import { MutantYearZeroMonsterSheet } from "./sheet/monster.js";
-import { MutantYearZeroStrongholdSheet } from "./sheet/stronghold.js";
+import { MutantYearZeroSettlementSheet } from "./sheet/settlement.js";
 import { MutantYearZeroWeaponSheet } from "./sheet/weapon.js";
 import { MutantYearZeroArmorSheet } from "./sheet/armor.js";
 import { MutantYearZeroGearSheet } from "./sheet/gear.js";
@@ -12,7 +12,8 @@ import { MutantYearZeroCriticalInjurySheet } from "./sheet/critical-injury.js";
 import { MutantYearZeroMonsterTalentSheet } from "./sheet/monster-talent.js";
 import { MutantYearZeroMonsterAttackSheet } from "./sheet/monster-attack.js";
 import { MutantYearZeroBuildingSheet } from "./sheet/building.js";
-import { MutantYearZeroHirelingSheet } from "./sheet/hireling.js";
+import { MutantYearZeroHirelingSheet } from "./sheet/vip.js";
+import { MutantYearZeroArtifactSheet } from "./sheet/artifact.js";
 import { initializeHandlebars } from "./handlebars.js";
 import { migrateWorld } from "./migration.js";
 
@@ -30,7 +31,7 @@ Hooks.once("init", () => {
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("mutant-year-zero", MutantYearZeroCharacterSheet, { types: ["character"], makeDefault: true });
   Actors.registerSheet("mutant-year-zero", MutantYearZeroMonsterSheet, { types: ["monster"], makeDefault: true });
-  Actors.registerSheet("mutant-year-zero", MutantYearZeroStrongholdSheet, { types: ["stronghold"], makeDefault: true });
+  Actors.registerSheet("mutant-year-zero", MutantYearZeroSettlementSheet, { types: ["settlement"], makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("mutant-year-zero", MutantYearZeroWeaponSheet, { types: ["weapon"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroArmorSheet, { types: ["armor"], makeDefault: true });
@@ -42,7 +43,8 @@ Hooks.once("init", () => {
   Items.registerSheet("mutant-year-zero", MutantYearZeroMonsterTalentSheet, { types: ["monsterTalent"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroMonsterAttackSheet, { types: ["monsterAttack"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroBuildingSheet, { types: ["building"], makeDefault: true });
-  Items.registerSheet("mutant-year-zero", MutantYearZeroHirelingSheet, { types: ["hireling"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroHirelingSheet, { types: ["vip"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroArtifactSheet, { types: ["artifact"], makeDefault: true });
   game.settings.register("mutant-year-zero", "worldSchemaVersion", {
     name: "World Version",
     hint: "Used to automatically upgrade worlds data when the system is upgraded.",

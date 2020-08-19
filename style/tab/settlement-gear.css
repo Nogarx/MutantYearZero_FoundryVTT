@@ -1,0 +1,50 @@
+.mutant-year-zero .settlement .gears {
+  padding-bottom: 8px;
+}
+
+.mutant-year-zero .settlement .gears .items .header {
+  margin: 0;
+  width: 100%;
+}
+
+.mutant-year-zero .settlement .gears .items div + .header {
+  margin-top: 8px;
+}
+
+.mutant-year-zero .settlement .gears .gear {
+  align-items: center;
+}
+
+.mutant-year-zero .settlement .gears .name {
+  align-items: center;
+  flex-basis: 60%;
+  display: flex;
+}
+
+.mutant-year-zero .settlement .gears .header .name,
+.mutant-year-zero .settlement .gears .name .name,
+.mutant-year-zero .settlement .gears .bonus,
+.mutant-year-zero .settlement .gears .weight,
+.mutant-year-zero .settlement .gears .button {
+  margin-left: 4px;
+}
+
+.mutant-year-zero .settlement .gears .bonus {
+  flex-basis: 15%;
+  text-align: center;
+}
+
+.mutant-year-zero .settlement .gears .bonus.broken {
+  color: #a00;
+}
+
+.mutant-year-zero .settlement .gears .weight {
+  flex-basis: 15%;
+  text-align: center;
+}
+
+.mutant-year-zero .settlement .gears .button {
+  flex-basis: 10%;
+  font-size: 10px;
+  text-align: right;
+}
