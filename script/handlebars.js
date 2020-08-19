@@ -25,6 +25,7 @@ function preloadHandlebarsTemplates() {
     "systems/mutant-year-zero/model/tab/building-stronghold.html",
     "systems/mutant-year-zero/model/tab/hireling-stronghold.html",
     "systems/mutant-year-zero/model/tab/gear-stronghold.html",
+    "systems/mutant-year-zero/model/tab/artifact.html",
   ];
   return loadTemplates(templatePaths);
 }

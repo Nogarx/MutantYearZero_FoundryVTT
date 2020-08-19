@@ -31,6 +31,7 @@ export class MutantYearZeroActor extends Actor {
       itemData.isMutation = itemData.type === "mutation";
       itemData.isTalent = itemData.type === "talent";
       itemData.isWeapon = itemData.type === "weapon";
+      itemData.isArtifact = itemData.type === "artifact";
       const html = await renderTemplate("systems/mutant-year-zero/chat/item.html", itemData);
       const chatData = {
         user: game.user._id,

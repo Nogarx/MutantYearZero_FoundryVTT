@@ -1,0 +1,60 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class="header">
+        <div class="avatar" style="grid-row-end: 3;">
+            <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        </div>
+        <div class="artifact-name">
+            <label>{{localize "GEAR.NAME"}}</label>
+            <input name="name" type="text" value="{{item.name}}" />
+        </div>
+        </div>
+    <div class="item">
+        <div class="dev-requirement">
+            <label>{{localize "DEV.REQUIREMENT"}}</label>
+            <input name="data.devRequirement" type="number" value="{{data.devRequirement}}" data-dtype="Number" />
+        </div>
+        <div class="bonus">
+            <label>{{localize "WEAPON.BONUS"}}</label>
+            <div class="multivalue">
+                <input name="data.bonus.value" type="number" value="{{data.bonus.value}}" data-dtype="Number" />
+                /
+                <input name="data.bonus.max" type="number" value="{{data.bonus.max}}" data-dtype="Number" />
+            </div>
+        </div>
+        <div class="devBonus">
+            <label>{{localize "DEV.BONUS"}}</label>
+            <input name="data.devBonus" type="text" value="{{data.devBonus}}" />
+        </div>
+        <div class="artifactBonus">
+            <label>{{localize "ARTIFACT.BONUS"}}</label>
+            <input name="data.artifactBonus" type="number" value="{{data.artifactBonus}}" data-dtype="Number" />
+        </div>
+        <div class="weight">
+            <label>{{localize "GEAR.WEIGHT"}}</label>
+            <select name="data.weight">
+                {{#select data.weight}}
+                <option value="tiny">{{localize "WEIGHT.TINY"}}</option>
+                <option value="light">{{localize "WEIGHT.LIGHT"}}</option>
+                <option value="regular">{{localize "WEIGHT.REGULAR"}}</option>
+                <option value="heavy">{{localize "WEIGHT.HEAVY"}}</option>
+                {{/select}}
+            </select>
+        </div>
+        <div class="features">
+            <label>{{localize "WEAPON.FEATURE"}}</label>
+            <input name="data.features" type="text" value="{{data.features}}" />
+        </div>
+        <div class="description">
+            <label>{{localize "WEAPON.DESCRIPTION"}}</label>
+            <textarea name="data.description">{{data.description}}</textarea>
+        </div>
+        <div class="drawback">
+            <label>{{localize "WEAPON.DRAWBACK"}}</label>
+            <textarea name="data.drawback">{{data.drawback}}</textarea>
+        </div>
+        <div class="appearance">
+            <label>{{localize "WEAPON.APPEARANCE"}}</label>
+            <textarea name="data.appearance">{{data.appearance}}</textarea>
+        </div>
+    </div>
+</form>
