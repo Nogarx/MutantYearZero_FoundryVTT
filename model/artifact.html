@@ -1,6 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off">
     <div class="header">
-        <div class="avatar" style="grid-row-end: 3;">
+        <div class="avatar">
             <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
         </div>
         <div class="artifact-name">
@@ -9,28 +9,8 @@
         </div>
         </div>
     <div class="item">
-        <div class="dev-requirement">
-            <label>{{localize "DEV.REQUIREMENT"}}</label>
-            <input name="data.devRequirement" type="number" value="{{data.devRequirement}}" data-dtype="Number" />
-        </div>
-        <div class="bonus">
-            <label>{{localize "WEAPON.BONUS"}}</label>
-            <div class="multivalue">
-                <input name="data.bonus.value" type="number" value="{{data.bonus.value}}" data-dtype="Number" />
-                /
-                <input name="data.bonus.max" type="number" value="{{data.bonus.max}}" data-dtype="Number" />
-            </div>
-        </div>
-        <div class="devBonus">
-            <label>{{localize "DEV.BONUS"}}</label>
-            <input name="data.devBonus" type="text" value="{{data.devBonus}}" />
-        </div>
-        <div class="artifactBonus">
-            <label>{{localize "ARTIFACT.BONUS"}}</label>
-            <input name="data.artifactBonus" type="number" value="{{data.artifactBonus}}" data-dtype="Number" />
-        </div>
         <div class="weight">
-            <label>{{localize "GEAR.WEIGHT"}}</label>
+            <label>{{localize "ARTIFACT.WEIGHT"}}</label>
             <select name="data.weight">
                 {{#select data.weight}}
                 <option value="tiny">{{localize "WEIGHT.TINY"}}</option>
@@ -40,20 +20,36 @@
                 {{/select}}
             </select>
         </div>
+        <div class="raiting">
+            <label>{{localize "ARTIFACT.RAITING"}}</label>
+            <div class="building-number">
+                <input name="data.raiting" type="text" value="{{data.raiting}}"/>
+                /
+                <input name="data.raitingMax" type="text" value="{{data.raitingMax}}"/>
+            </div>
+        </div>
         <div class="features">
-            <label>{{localize "WEAPON.FEATURE"}}</label>
-            <input name="data.features" type="text" value="{{data.features}}" />
+            <label>{{localize "ARTIFACT.REQUIREMENT"}}</label>
+            <input name="data.requirement" type="number" value="{{data.requirement}}" data-dtype="Number" />
+        </div>
+        <div class="features">
+            <label>{{localize "ARTIFACT.TECHBONUS"}}</label>
+            <input name="data.techBonus" type="text" value="{{data.techBonus}}" />
+        </div>
+        <div class="features">
+            <label>{{localize "ARTIFACT.FEATURE"}}</label>
+            <input name="data.feature" type="text" value="{{data.feature}}" />
         </div>
         <div class="description">
-            <label>{{localize "WEAPON.DESCRIPTION"}}</label>
+            <label>{{localize "ARTIFACT.DESCRIPTION"}}</label>
             <textarea name="data.description">{{data.description}}</textarea>
         </div>
         <div class="drawback">
-            <label>{{localize "WEAPON.DRAWBACK"}}</label>
+            <label>{{localize "ARTIFACT.DRAWBACK"}}</label>
             <textarea name="data.drawback">{{data.drawback}}</textarea>
         </div>
         <div class="appearance">
-            <label>{{localize "WEAPON.APPEARANCE"}}</label>
+            <label>{{localize "ARTIFACT.APPEARANCE"}}</label>
             <textarea name="data.appearance">{{data.appearance}}</textarea>
         </div>
     </div>

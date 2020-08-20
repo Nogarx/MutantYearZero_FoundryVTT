@@ -14,25 +14,15 @@
 }
 
 .mutant-year-zero .settlement .hirelings .vip .name {
-  flex-basis: 55%;
+  flex-basis: 65%;
 }
 
 .mutant-year-zero .settlement .hirelings .vip .name a {
   font-weight: bold;
 }
 
-.mutant-year-zero .settlement .hirelings .vip .number {
-  flex-basis: 15%;
-  text-align: center;
-}
-
-.mutant-year-zero .settlement .hirelings .vip .salary {
-  flex-basis: 20%;
-  text-align: right;
-}
-
 .mutant-year-zero .settlement .hirelings .vip .button {
-  flex-basis: 10%;
+  flex-basis: 35%;
   font-size: 10px;
   text-align: right;
 }

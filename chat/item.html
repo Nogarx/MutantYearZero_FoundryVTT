@@ -22,8 +22,8 @@
         {{#if isMonsterTalent}}
         <h4>{{localize "ITEM.TALENT"}}</h4>
         {{/if}}
-        {{#if isRawMaterial}}
-        <h4>{{localize "ITEM.RAW_MATERIAL"}}</h4>
+        {{#if isScrap}}
+        <h4>{{localize "ITEM.SCRAP"}}</h4>
         {{/if}}
         {{#if isMutation}}
         <h4>{{localize "ITEM.MUTATION"}}</h4>
@@ -54,12 +54,11 @@
         {{/if}}
         
         {{#if isBuilding}}
-        <p><strong>{{localize "BUILDING.NUMBER"}}:</strong> {{data.number}}</p>
         {{#if data.description}}
         <p>{{data.description}}</p>
         {{/if}}
-        {{#if data.effect}}
-        <p>{{data.effect}}</p>
+        {{#if data.dev-bonus}}
+        <p>{{data.dev-bonus}}</p>
         {{/if}}
         {{/if}}
 
@@ -78,9 +77,7 @@
         {{/if}}
         {{/if}}
 
-        {{#if isHireling}}
-        <p><strong>{{localize "VIP.SALARY"}}:</strong> {{data.salary}}</p>
-        <p><strong>{{localize "VIP.NUMBER"}}:</strong> {{data.number}}</p>
+        {{#if isVip}}
         {{#if data.description}}
         <p>{{data.description}}</p>
         {{/if}}
@@ -98,8 +95,8 @@
         {{/if}}
         {{/if}}
 
-        {{#if isRawMaterial}}
-        <p><strong>{{localize "RAW_MATERIAL.SHELF_LIFE"}}:</strong> {{data.shelfLife}}</p>
+        {{#if isScrap}}
+        <p><strong>{{localize "SCRAP.SHELF_LIFE"}}:</strong> {{data.shelfLife}}</p>
         {{/if}}
 
         {{#if isMutation}}

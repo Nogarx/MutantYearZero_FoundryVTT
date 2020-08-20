@@ -303,9 +303,12 @@
       }
     },
     "settlement": {
-      "location": "",
+      "sector": "",
       "description": "",
-      "defenseRating": 0
+      "food": 0,
+      "culture": 0,
+      "tech": 0,
+      "warfare": 0
     }
   },
   "Item": {
@@ -314,7 +317,7 @@
       "weapon",
       "armor",
       "gear",
-      "rawMaterial",
+      "scrap",
       "talent",
       "criticalInjury",
       "mutation",
@@ -331,39 +334,43 @@
         }
       },
       "craftable": {
-        "rawMaterials": "",
+        "scraps": "",
         "time": "",
         "talent": "",
         "tools": ""
       }
     },
     "artifact":{
-      "description": ""
+      "raiting": 0,
+      "raitingMax": 0,
+      "requirement": "",
+      "techBonus": "",
+      "weight": "regular",
+      "feature": "",
+      "description": "",
+      "drawback": "",
+      "appearance": ""
     },
     "weapon": {
-      "templates": ["bonus", "craftable"],
+      "templates": ["bonus"],
       "category": "melee",
-      "artifactBonus": "",
-      "skillBonus": 0,
       "damage": 1,
       "features": "",
       "grip": "1h",
       "range": "arm",
-      "drawback": "",
       "description": "",
       "appearance": "",
       "cost": "",
-      "supply": "",
-      "weight": "regular",
-      "effect": ""
+      "weight": "regular"
     },
     "armor": {
-      "templates": ["bonus", "craftable"],
+      "templates": ["bonus"],
       "cost": 0,
       "part": "body",
       "features": "",
-      "supply": "",
-      "weight": "regular"
+      "weight": "regular",
+      "description": "",
+      "appearance": ""
     },
     "mutation": {
       "rank": 1,
@@ -383,16 +390,15 @@
       "healingTime": ""
     },
     "gear": {
-      "templates": ["bonus", "craftable"],
+      "templates": ["bonus"],
       "cost": "",
-      "supply": "",
       "weight": "regular",
       "effect": ""
     },
-    "rawMaterial": {
-      "templates": ["bonus", "craftable"],
-      "cost": "",
-      "shelfLife": ""
+    "scrap": {
+      "templates": ["bonus"],
+      "weight": "regular",
+      "cost": ""
     },
     "monsterTalent": {
       "description": ""
@@ -405,17 +411,13 @@
     "building": {
       "description": "",
       "requirement": "",
-      "rawMaterials": "",
-      "tools": "",
-      "time": "",
-      "effect": "",
-      "number": 0
+      "work-points": 0,
+      "work-required": 0,
+      "dev-bonus": ""
     },
     "vip": {
       "description": "",
-      "salary": "",
-      "supply": "",
-      "number": 0
+      "appearance": ""
     }
   }
 }

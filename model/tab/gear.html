@@ -107,15 +107,15 @@
                 {{/each}}
             </div>
             <div class="header flex row">
-                <b class="name">{{localize "HEADER.RAW_MATERIAL"}}</b>
+                <b class="name">{{localize "HEADER.SCRAP"}}</b>
                 <b class="bonus">{{localize "GEAR.BONUS"}}</b>
                 <b class="weight">{{localize "GEAR.WEIGHT"}}</b>
-                <a class="button item-create" title="Add Raw Material" data-type="rawMaterial"><i
+                <a class="button item-create" title="Add Scrap" data-type="scrap"><i
                         class="fas fa-plus"></i></a>
             </div>
             <div>
                 {{#each actor.items as |item|}}
-                {{#if item.isRawMaterial}}
+                {{#if item.isScrap}}
                 <div class="gear item flex row" data-item-id="{{item._id}}">
                     <div class="name">
                         <div class="image-container">

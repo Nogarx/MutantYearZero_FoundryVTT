@@ -6,20 +6,38 @@
                     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
                 </div>
                 <div class="flex column grow">
-                    <div class="name">
-                        <label>{{localize "BIO.NAME"}}:</label>
-                        <input name="name" type="text" value="{{actor.name}}" />
+                    <div class="bio-row">
+                        <div class="name">
+                            <label>{{localize "BIO.NAME"}}:</label>
+                            <input name="name" type="text" value="{{actor.name}}" />
+                        </div>
+                        <div class="sector">
+                            <label>{{localize "SETTLEMENT.SECTOR"}}:</label>
+                            <input name="data.sector" type="text" value="{{data.sector}}" />
+                        </div>
                     </div>
                     <div class="bio-row">
-                        <div class="location">
-                            <label>{{localize "SETTLEMENT.LOCATION"}}:</label>
-                            <input name="data.location" type="text" value="{{data.location}}" />
-                        </div>
-                        <div class="defense-rating">
-                            <label>{{localize "SETTLEMENT.DEFENSE_RATING"}}:</label>
-                            <input name="data.defenseRating" type="number" value="{{data.defenseRating}}"
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.FOOD"}}:</label>
+                            <input name="data.food" type="number" value="{{data.food}}"
                                 data-dtype="Number" />
                         </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.CULTURE"}}:</label>
+                            <input name="data.culture" type="number" value="{{data.culture}}"
+                                data-dtype="Number" />
+                        </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.TECH"}}:</label>
+                            <input name="data.tech" type="number" value="{{data.tech}}"
+                                data-dtype="Number" />
+                        </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.WARFARE"}}:</label>
+                            <input name="data.warfare" type="number" value="{{data.warfare}}"
+                                data-dtype="Number" />
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -1,24 +1,23 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <div class="item">
-        <div class="name" style="grid-column: 1/-1;">
+
+    <div class="header">
+        <div class="avatar">
+            <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+        </div>
+        <div class="name">
             <label>{{localize "GEAR.NAME"}}</label>
             <input name="name" type="text" value="{{item.name}}"/>
         </div>
-        <div class="supply">
-            <label>{{localize "VIP.SUPPLY"}}</label>
-            <input name="data.supply" type="text" value="{{data.supply}}"/>
-        </div>
-        <div class="salary">
-            <label>{{localize "VIP.SALARY"}}</label>
-            <input name="data.salary" type="text" value="{{data.salary}}"/>
-        </div>
-        <div class="number">
-            <label>{{localize "VIP.NUMBER"}}</label>
-            <input name="data.number" type="text" value="{{data.number}}"/>
-        </div>
+    </div>
+
+    <div class="item">
         <div class="vip-description">
             <label>{{localize "VIP.DESCRIPTION"}}</label>
             <textarea name="data.description">{{data.description}}</textarea>
+        </div>
+        <div class="appearance">
+            <label>{{localize "VIP.APPEARANCE"}}</label>
+            <textarea name="data.appearance">{{data.appearance}}</textarea>
         </div>
     </div>
 </form>

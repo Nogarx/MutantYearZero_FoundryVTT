@@ -5,7 +5,7 @@ export class MutantYearZeroMutationSheet extends ItemSheet {
             classes: ["mutant-year-zero", "sheet", "item"],
             template: "systems/mutant-year-zero/model/mutation.html",
             width: 400,
-            height: 470,
+            height: 425,
             resizable: false
         });
     }

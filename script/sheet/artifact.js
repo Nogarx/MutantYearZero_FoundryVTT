@@ -4,7 +4,7 @@ export class MutantYearZeroArtifactSheet extends ItemSheet {
         classes: ["mutant-year-zero", "sheet", "item"],
         template: "systems/mutant-year-zero/model/artifact.html",
         width: 400,
-        height: 250,
+        height: 730,
         resizable: false,
       });
     }

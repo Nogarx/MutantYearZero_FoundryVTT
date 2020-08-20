@@ -61,6 +61,11 @@
   grid-column: 1/-1;
 }
 
+.mutant-year-zero.item .item .effect textarea {
+  resize: none;
+  height: 100px;
+}
+
 .mutant-year-zero.item .item .description {
   grid-column: 1/-1;
 }
@@ -135,4 +140,23 @@
 .mutant-year-zero.item .item .building-description textarea {
   resize: none;
   height: 215px;
+}
+
+.mutant-year-zero.item .item .building-text {
+  grid-column: 1/-1;
+}
+
+.mutant-year-zero.item .item .building-number {
+  display: flex;
+  flex-direction: row;
+}
+
+.mutant-year-zero.item .item .building-number input {
+  width: 4em;
+  margin: 0px 5px;
+}
+
+.mutant-year-zero.item .item .building-text textarea {
+  resize: none;
+  height: 50px;
 }

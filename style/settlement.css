@@ -47,15 +47,14 @@
   cursor: pointer;
 }
 
-.mutant-year-zero .settlement .bio .name {
-  display: flex;
-  flex-direction: row;
+.mutant-year-zero .settlement .bio .name input {
+  width: 25em;
 }
 
-.mutant-year-zero .settlement .bio .location input {
-  width: 15em;
+.mutant-year-zero .settlement .bio .sector input {
+  width: 4em;
 }
 
-.mutant-year-zero .settlement .bio .defense-rating input {
+.mutant-year-zero .settlement .bio .settlement-attribute input {
   width: 2em;
 }

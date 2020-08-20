@@ -4,7 +4,7 @@ export class MutantYearZeroWeaponSheet extends ItemSheet {
       classes: ["mutant-year-zero", "sheet", "item"],
       template: "systems/mutant-year-zero/model/weapon.html",
       width: 400,
-      height: 430,
+      height: 580,
       resizable: false,
     });
   }

@@ -4,7 +4,7 @@ export class MutantYearZeroHirelingSheet extends ItemSheet {
       classes: ["mutant-year-zero", "sheet", "item"],
       template: "systems/mutant-year-zero/model/vip.html",
       width: 400,
-      height: 400,
+      height: 525,
       resizable: false,
     });
   }

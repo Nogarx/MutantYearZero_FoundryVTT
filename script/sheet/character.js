@@ -83,8 +83,8 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
           value: this.actor.data.data.attribute.strength.value
         };
         skill = {
-          name: game.i18n.localize(game.i18n.localize(this.actor.data.data.skill.melee.label)), 
-          value: this.actor.data.data.skill.melee.value
+          name: game.i18n.localize(game.i18n.localize(this.actor.data.data.skill.fight.label)), 
+          value: this.actor.data.data.skill.fight.value
         };
       } else {
         base = 0;
@@ -127,7 +127,7 @@ export class MutantYearZeroCharacterSheet extends MutantYearZeroActorSheet {
       item.isWeapon = item.type === "weapon";
       item.isArmor = item.type === "armor";
       item.isGear = item.type === "gear";
-      item.isRawMaterial = item.type === "rawMaterial";
+      item.isScrap = item.type === "scrap";
       item.isMutation = item.type === "mutation";
       item.isCriticalInjury = item.type === "criticalInjury";
       item.isArtifact = item.type === "artifact";

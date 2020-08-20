@@ -5,7 +5,7 @@ export class MutantYearZeroMonsterAttackSheet extends ItemSheet {
             classes: ["mutant-year-zero", "sheet", "item"],
             template: "systems/mutant-year-zero/model/monster-attack.html",
             width: 400,
-            height: 468,
+            height: 475,
             resizable: false
         });
     }

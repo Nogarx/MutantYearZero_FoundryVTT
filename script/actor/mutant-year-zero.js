@@ -27,7 +27,7 @@ export class MutantYearZeroActor extends Actor {
       itemData.isHireling = itemData.type === "vip";
       itemData.isMonsterAttack = itemData.type === "monsterAttack";
       itemData.isMonsterTalent = itemData.type === "monsterTalent";
-      itemData.isRawMaterial = itemData.type === "rawMaterial";
+      itemData.isScrap = itemData.type === "scrap";
       itemData.isMutation = itemData.type === "mutation";
       itemData.isTalent = itemData.type === "talent";
       itemData.isWeapon = itemData.type === "weapon";

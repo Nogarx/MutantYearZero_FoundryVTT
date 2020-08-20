@@ -5,7 +5,7 @@ import { MutantYearZeroSettlementSheet } from "./sheet/settlement.js";
 import { MutantYearZeroWeaponSheet } from "./sheet/weapon.js";
 import { MutantYearZeroArmorSheet } from "./sheet/armor.js";
 import { MutantYearZeroGearSheet } from "./sheet/gear.js";
-import { MutantYearZeroRawMaterialSheet } from "./sheet/raw-material.js";
+import { MutantYearZeroScrapSheet } from "./sheet/scrap.js";
 import { MutantYearZeroMutationSheet } from "./sheet/mutation.js";
 import { MutantYearZeroTalentSheet } from "./sheet/talent.js";
 import { MutantYearZeroCriticalInjurySheet } from "./sheet/critical-injury.js";
@@ -36,7 +36,7 @@ Hooks.once("init", () => {
   Items.registerSheet("mutant-year-zero", MutantYearZeroWeaponSheet, { types: ["weapon"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroArmorSheet, { types: ["armor"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroGearSheet, { types: ["gear"], makeDefault: true });
-  Items.registerSheet("mutant-year-zero", MutantYearZeroRawMaterialSheet, { types: ["rawMaterial"], makeDefault: true });
+  Items.registerSheet("mutant-year-zero", MutantYearZeroScrapSheet, { types: ["scrap"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroMutationSheet, { types: ["mutation"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroTalentSheet, { types: ["talent"], makeDefault: true });
   Items.registerSheet("mutant-year-zero", MutantYearZeroCriticalInjurySheet, { types: ["criticalInjury"], makeDefault: true });
