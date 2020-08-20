@@ -5,7 +5,7 @@ export class MutantYearZeroMonsterTalentSheet extends ItemSheet {
             classes: ["mutant-year-zero", "sheet", "item"],
             template: "systems/mutant-year-zero/model/monster-talent.html",
             width: 400,
-            height: 420,
+            height: 430,
             resizable: false
         });
     }

@@ -1,0 +1,28 @@
+.mutant-year-zero .settlement .hirelings {
+  flex-basis: 50%;
+}
+
+.mutant-year-zero .settlement .hirelings .vip {
+  align-items: center;
+}
+
+.mutant-year-zero .character .hirelings .header .name,
+.mutant-year-zero .character .hirelings .name .name,
+.mutant-year-zero .character .hirelings .number,
+.mutant-year-zero .character .hirelings .button {
+  margin-left: 4px;
+}
+
+.mutant-year-zero .settlement .hirelings .vip .name {
+  flex-basis: 65%;
+}
+
+.mutant-year-zero .settlement .hirelings .vip .name a {
+  font-weight: bold;
+}
+
+.mutant-year-zero .settlement .hirelings .vip .button {
+  flex-basis: 35%;
+  font-size: 10px;
+  text-align: right;
+}

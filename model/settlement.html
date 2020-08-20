@@ -1,0 +1,68 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <div class="settlement">
+        <div class="bio border">
+            <div class="flex row align-center">
+                <div class="avatar">
+                    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+                </div>
+                <div class="flex column grow">
+                    <div class="bio-row">
+                        <div class="name">
+                            <label>{{localize "BIO.NAME"}}:</label>
+                            <input name="name" type="text" value="{{actor.name}}" />
+                        </div>
+                        <div class="sector">
+                            <label>{{localize "SETTLEMENT.SECTOR"}}:</label>
+                            <input name="data.sector" type="text" value="{{data.sector}}" />
+                        </div>
+                    </div>
+                    <div class="bio-row">
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.FOOD"}}:</label>
+                            <input name="data.food" type="number" value="{{data.food}}"
+                                data-dtype="Number" />
+                        </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.CULTURE"}}:</label>
+                            <input name="data.culture" type="number" value="{{data.culture}}"
+                                data-dtype="Number" />
+                        </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.TECH"}}:</label>
+                            <input name="data.tech" type="number" value="{{data.tech}}"
+                                data-dtype="Number" />
+                        </div>
+                        <div class="settlement-attribute">
+                            <label>{{localize "SETTLEMENT.WARFARE"}}:</label>
+                            <input name="data.warfare" type="number" value="{{data.warfare}}"
+                                data-dtype="Number" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sheet-tabs tabs flex row" data-group="primary">
+            <b class="item" data-tab="building">{{localize "TAB.BUILDING"}}</b>
+            <b class="item" data-tab="vip">{{localize "TAB.VIP"}}</b>
+            <b class="item" data-tab="gear">{{localize "TAB.GEAR"}}</b>
+            <b class="item" data-tab="note">{{localize "TAB.NOTE"}}</b>
+        </div>
+
+        <div class="sheet-body">
+            <div class="tab" data-group="primary" data-tab="building">
+                {{> systems/mutant-year-zero/model/tab/building-settlement.html}}
+            </div>
+            <div class="tab" data-group="primary" data-tab="vip">
+                {{> systems/mutant-year-zero/model/tab/vip-settlement.html}}
+            </div>
+            <div class="tab" data-group="primary" data-tab="gear">
+                {{> systems/mutant-year-zero/model/tab/gear-settlement.html}}
+            </div>
+            <div class="tab note" data-group="primary" data-tab="note">
+                {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+    </div>
+</form>

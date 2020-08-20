@@ -62,7 +62,7 @@ export class MutantYearZeroMonsterSheet extends MutantYearZeroActorSheet {
       item.isWeapon = item.type === "weapon";
       item.isArmor = item.type === "armor";
       item.isGear = item.type === "gear";
-      item.isRawMaterial = item.type === "rawMaterial";
+      item.isScrap = item.type === "scrap";
     }
   }
 

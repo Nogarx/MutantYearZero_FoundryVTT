@@ -82,10 +82,10 @@ export class MutantYearZeroActorSheet extends ActorSheet {
       let skill;
       if (weapon.data.data.category === "melee") {
         attribute = this.actor.data.data.attribute.strength;
-        skill = this.actor.data.data.skill.melee;
+        skill = this.actor.data.data.skill.fight;
       } else {
         attribute = this.actor.data.data.attribute.agility;
-        skill = this.actor.data.data.skill.marksmanship;
+        skill = this.actor.data.data.skill.shoot;
       }
       let bonus = this.parseBonus(weapon.data.data.bonus.value);
       RollDialog.prepareRollDialog(

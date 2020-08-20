@@ -4,29 +4,20 @@
             <label>{{localize "GEAR.NAME"}}</label>
             <input name="name" type="text" value="{{item.name}}"/>
         </div>
+        <label>{{localize "BUILDING.WORK_POINTS"}}</label>
         <div class="building-number">
-            <label>{{localize "BUILDING.NUMBER"}}</label>
-            <input name="data.number" type="text" value="{{data.number}}"/>
+            <input name="data.work-points" type="text" value="{{data.work-points}}"/>
+            /
+            <input name="data.work-required" type="text" value="{{data.work-required}}"/>
         </div>
-        <div class="requirement">
+        <div class="building-text">
             <label>{{localize "BUILDING.REQUIREMENT"}}</label>
-            <input name="data.requirement" type="text" value="{{data.requirement}}"/>
+            <textarea name="data.requirement">{{data.requirement}}</textarea>
         </div>
-        <div class="tools">
-            <label>{{localize "BUILDING.TOOLS"}}</label>
-            <input name="data.tools" type="text" value="{{data.tools}}"/>
-        </div>
-        <div class="building-raw-materials">
-            <label>{{localize "BUILDING.RAW_MATERIALS"}}</label>
-            <input name="data.rawMaterials" type="text" value="{{data.rawMaterials}}"/>
-        </div>
-        <div class="building-time">
-            <label>{{localize "BUILDING.TIME"}}</label>
-            <input name="data.time" type="text" value="{{data.time}}"/>
-        </div>
-        <div class="effect">
-            <label>{{localize "BUILDING.EFFECT"}}</label>
-            <input name="data.effect" type="text" value="{{data.effect}}"/>
+        <div class="building-text">
+            <label>{{localize "BUILDING.DEV_BONUS"}}</label>
+            <textarea name="data.dev-bonus">{{data.dev-bonus}}</textarea>
+            
         </div>
         <div class="building-description">
             <label>{{localize "BUILDING.DESCRIPTION"}}</label>

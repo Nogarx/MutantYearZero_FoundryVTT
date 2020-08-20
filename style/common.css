@@ -319,9 +319,7 @@
 
 /* Chat */
 .mutant-year-zero.chat-item {
-  background: var(--color-background);
   border-radius: 3px;
-  color: var(--color-foreground);
   font-family: var(--font-table);
   font-size: 12px;
   line-height: 16px;
@@ -367,9 +365,7 @@
 }
 
 .mutant-year-zero.roll-item {
-  background: var(--color-background);
   border-radius: 3px;
-  color: var(--color-foreground);
   font-family: var(--font-table);
   font-size: 12px;
   line-height: 16px;
@@ -424,7 +420,9 @@
 }
 
 #chat-log .message {
-  background: white;
+  background-image:url(../asset/sheet-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .app,
 #hotbar .macro,

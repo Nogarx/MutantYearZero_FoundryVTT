@@ -1,10 +1,10 @@
-export class MutantYearZeroRawMaterialSheet extends ItemSheet {
+export class MutantYearZeroHirelingSheet extends ItemSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["mutant-year-zero", "sheet", "item"],
-      template: "systems/mutant-year-zero/model/raw-material.html",
+      template: "systems/mutant-year-zero/model/vip.html",
       width: 400,
-      height: 350,
+      height: 525,
       resizable: false,
     });
   }

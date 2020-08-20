@@ -24,7 +24,12 @@ export class RollDialog {
         if (typeof skillDefault !== 'object') skillDefault = { name: "Skill", value: skillDefault };
 
         let baseHtml = this.buildDisableInpuHtmlDialog(baseDefault.name, baseDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), baseDefault.value);
-        let skillHtml = this.buildDisableInpuHtmlDialog(skillDefault.name, skillDefault.name.replace(/[^a-z0-9]/i, '-').toLowerCase(), skillDefault.value);
+        /* ERROR STARTS HERE: System use the html name of the skill to find the skill real skill. 
+        The problem is that replace only replace the first blank it founds. Fixed the error by adding another 
+        replace step. This is a horrible solution but i don't understand why replace is not replacing all blank 
+        spaces with hyphens*/
+        var parsedSkillName = skillDefault.name.replace(' ', '-').replace(' ', '-').toLowerCase();
+        let skillHtml = this.buildDisableInpuHtmlDialog(skillDefault.name, parsedSkillName, skillDefault.value);
         let gearHtml = this.buildInputHtmlDialog("Gear", "gear", gearDefault);
         let modifierHtml = this.buildInputHtmlDialog("Modifier", "modifier", modifierDefault);
 
@@ -37,7 +42,9 @@ export class RollDialog {
                     label: "Roll",
                     callback: (html) => {
                         let base = html.find('#' + baseDefault.name.toLowerCase())[0].value;
-                        let skill = html.find('#' + skillDefault.name.toLowerCase())[0].value;
+                        /* ERROR CONTINUE HERE: It is also required to double parse the name in order to find the value.*/
+                        var parsedSkillName = skillDefault.name.replace(' ', '-').replace(' ', '-').toLowerCase();
+                        let skill = html.find('#' + parsedSkillName)[0].value;
                         let gear = html.find('#gear')[0].value;
                         let modifier = html.find('#modifier')[0].value;
                         diceRoller.roll(
