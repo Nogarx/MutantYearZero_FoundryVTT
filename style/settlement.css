@@ -48,11 +48,15 @@
 }
 
 .mutant-year-zero .settlement .bio .name input {
-  width: 25em;
+  width: 15em;
 }
 
 .mutant-year-zero .settlement .bio .sector input {
   width: 4em;
+}
+
+.mutant-year-zero .settlement .bio .population input {
+  width: 3em;
 }
 
 .mutant-year-zero .settlement .bio .settlement-attribute input {
