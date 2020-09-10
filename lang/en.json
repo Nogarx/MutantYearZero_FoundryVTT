@@ -182,6 +182,7 @@
   "MOVEMENT": "Movement",
 
   "SETTLEMENT.SECTOR": "Sector",
+  "SETTLEMENT.POPULATION": "Population",
   "SETTLEMENT.FOOD": "Food Supply",
   "SETTLEMENT.CULTURE": "Culture",
   "SETTLEMENT.TECH": "Technology",
